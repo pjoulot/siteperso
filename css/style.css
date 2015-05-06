@@ -257,3 +257,52 @@ table {
 	background-color: white;
 	border: solid 8px #40A7DC;
 }
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+#dashContent .presentation p {
+	text-align: left;
+	font-weight: normal;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 1.1em;
+	text-align: justify;
+}
+
+.circleBlack {
+	border-radius: 50%;
+	border: solid 8px black;
+	margin: 20px;
+}
+
+#dashContent form {
+	width: 50%;
+	margin: auto;
+}
+
+input, textarea {
+	width: 100%;
+	font-size: 1em;
+}
+
+select {
+	font-size: 1em;
+	color: #333333;
+}
+
+input[type="submit"] {
+	font-weight: bold;
+	color: #333333;
+}
+
+#dashContent  form p {
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
