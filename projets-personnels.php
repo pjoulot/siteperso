@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title>Philippe Joulot</title>
+<?php
+$titleBalise = 'Philippe Joulot - Projets personnels';
+$titlePage = 'Projets personnels';
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+include('includes/header.php');
 
-</head>
-
-<body>
-
-<nav>
-	<ul>
-	   <li><a href="index.html"><div id="logoWebsite"></div></a></li>
-	   <li><a href="cv.html"><span>CV</span></a></li>
-	   <li><a href="#"><span>Projets bénévoles</span></a></li>
-	   <li class="#"><a href='#'><span>Projets personnels</span></a></li>
-	    <li><a href="#"><span>A Propos</span></a></li>
-	   <li><a href="#"><span>Contact</span></a></li>
-	</ul>
-</nav>
-<h1 id="descSite">
-	Projets personnels
-</h1>
-
-<div class="lineDesign"></div>
+?>
 
 <div class="contentBack">
 	<table class="tableCV">
@@ -63,23 +42,6 @@
 	</table>
 </div>
 
-<div class="lineDesign"></div>
-<footer>
-	<div id="me"></div>
-	<div>
-		<h3>Suivez-moi</h3>
-		<div>
-			<a href="https://github.com/pjoulot"><div class="followNetwork github"></div></a>
-			<a href="http://fr.linkedin.com/pub/philippe-joulot/89/490/b7a"><div class="followNetwork linkedin"></div></a>
-		</div>
-	</div>
-	<div>
-		<h3>Qui-suis-je?</h3>
-		<p>Mon nom est Philippe Joulot et je suis un développeur logiciel/web originaire de Virolfay en France.</p>
-	</div>
-</footer>
-<div id="copyright">
-    © 2015 Philippe Joulot. Tous droits réservés.
-</div>
-</body>
-</html>
+<?php
+include('includes/footer.php');
+?>
