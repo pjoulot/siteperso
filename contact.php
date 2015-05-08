@@ -4,6 +4,18 @@ $titlePage = 'Contact';
 
 include('includes/header.php');
 
+if (!empty($_POST['pseudo']) AND !empty($_POST['adresse_mail']) AND empty($_POST['bot']) AND !empty($_POST['objet']) AND !empty($_POST['contenu_message']))
+	{
+	// Stockage des données du formulaire
+    $pseudo = stripslashes(htmlspecialchars($_POST['pseudo'],ENT_QUOTES));
+	$adresse_mail = stripslashes(htmlspecialchars($_POST['adresse_mail'],ENT_QUOTES));
+	$importance = stripslashes(htmlspecialchars($_POST['importance'],ENT_QUOTES));
+	$objet = stripslashes(htmlspecialchars($_POST['objet']));
+	$contenu_message = stripslashes(htmlspecialchars($_POST['contenu_message'],ENT_QUOTES));
+
+	
+}
+
 ?>
 
 <div id="dash">
@@ -24,6 +36,8 @@ include('includes/header.php');
 		   <p><label class="gras">Contenu du message</label>: <br/>
 			<textarea name="contenu_message" rows="12" cols="50"></textarea>
 		   </p>
+		   <!-- Champ mail à ne pas remplir - pour les bots -->
+		   <p><input type="text" name="mail" value="" /></p>
 		   <p><input type="submit" name="envoyer" value="Envoyer" /></p>
 		</form>
 	</div>

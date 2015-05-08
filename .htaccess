@@ -1,0 +1,21 @@
+# Configuration de l'encodage
+AddDefaultCharset UTF-8 
+
+#Interdire de lister le contenu d'un dossier
+Options -Indexes
+
+#Rewriting
+Options +FollowSymLinks
+RewriteEngine on
+
+#Réécriture de l'url du site
+RewriteCond %{HTTP_HOST} ^philippejoulot.fr$
+RewriteRule ^(.*) http://www.philippejoulot.fr/$1 [QSA,L,R=301] 
+
+# Renommage des pages
+RewriteRule ^http://www.philippejoulot.fr$ /index.php [L]
+RewriteRule ^contact.html$ /philippe.joulot/siteperso/contact.php [L]
+RewriteRule ^projets-personnels.html$ /philippe.joulot/siteperso/projets-personnels.php [L]
+RewriteRule ^projets-benevoles.html$ /philippe.joulot/siteperso/projets-benevoles.php [L]
+RewriteRule ^a-propos.html$ /philippe.joulot/siteperso/a-propos.php [L]
+RewriteRule ^cv.html$ /philippe.joulot/siteperso/cv.php [L]

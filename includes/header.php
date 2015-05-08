@@ -13,7 +13,7 @@
 
 <nav>
 	<ul>
-	   <li><a href="index.html"><div id="logoWebsite"></div></a></li>
+	   <li><a href="http://www.philippejoulot.fr"><div id="logoWebsite"></div></a></li>
 	   <li><a href="cv.html#"><span>CV</span></a></li>
 	   <li><a href="projets-benevoles.html"><span>Projets bénévoles</span></a></li>
 	   <li><a href='projets-personnels.html'><span>Projets personnels</span></a></li>

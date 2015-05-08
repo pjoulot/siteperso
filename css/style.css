@@ -41,7 +41,7 @@ nav li {
 	font-size: 1.2em;
 	text-transform: none;
 	font-family: "Lato",Arial,Helvetica,sans-serif;
-	transition: color 0.4s, background 0.4;
+	transition: color 0.4s, background 0.4s;
 }
 
 nav li:hover {
@@ -299,6 +299,10 @@ select {
 input[type="submit"] {
 	font-weight: bold;
 	color: #333333;
+}
+
+input[name="mail"] {
+	display: none;
 }
 
 #dashContent  form p {

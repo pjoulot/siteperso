@@ -1,0 +1,38 @@
+
+# Configuration de l'encodage
+AddDefaultCharset UTF-8 
+
+#Interdire de lister le contenu d'un dossier
+Options -Indexes
+
+# Mise en cache pendant 45 jours
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf|doc)$">
+Header set Cache-Control "max-age=3888000"
+</FilesMatch>
+
+# Compress the files
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript
+# Removes some bugs
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+Header append Vary User-Agent
+
+#Configuration des entity tags
+FileETag none
+
+#Rewriting
+Options +FollowSymLinks
+RewriteEngine on
+
+#Réécriture de l'url du site
+RewriteCond %{HTTP_HOST} ^philippejoulot.fr$
+RewriteRule ^(.*) http://www.philippejoulot.fr/$1 [QSA,L,R=301] 
+
+# Renommage des pages
+RewriteRule ^http://www.philippejoulot.fr$ /index.php [L]
+RewriteRule ^contact.html$ /contact.php [L]
+RewriteRule ^projets-personnels.html$ /projets-personnels.php [L]
+RewriteRule ^projets-benevoles.html$ /projets-benevoles.php [L]
+RewriteRule ^a-propos.html$ /a-propos.php [L]
+RewriteRule ^cv.html$ /cv.php [L]

@@ -20,7 +20,7 @@ include('includes/header.php');
 			<td><img src ="images/philippejoulotlogo_300.png" alt="Open Food Facts" class="circularBlock" /></td>
 			<td>
 				<h2>Votre projet bénévole?</h2>
-				<p>Si vous avez besoin d'un développeur, n'hésitez pas à me demander en m'expliquant votre projet. S'il me tient à coeur et suivant mes disponibilités, je peux peut être vous apportez mon aide.</p>
+				<p>Si vous avez besoin d'un développeur, n'hésitez pas à me demander en m'expliquant votre projet. S'il me tient à coeur et suivant mes disponibilités, je peux peut-être vous apporter mon aide.</p>
 			</td>
 		</tr>
 	</table>
