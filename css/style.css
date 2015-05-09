@@ -310,3 +310,44 @@ input[name="mail"] {
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
+
+a {
+	color: #1A668E;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.gras {
+	font-weight: bold;
+}
+
+.erreur {
+	color: #E32529;
+	background-color: #F2AEAE;
+	border: solid 1px #E32529;
+	border-left: solid 10px #E32529;
+	padding: 8px;
+}
+
+.valide {
+	color: #078848;
+	background-color: #E3FFEC;
+	border: solid 1px #078848;
+	border-left: solid 10px #078848;
+	padding: 8px;
+}
