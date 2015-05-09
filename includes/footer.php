@@ -8,7 +8,7 @@
 			<a href="http://fr.linkedin.com/pub/philippe-joulot/89/490/b7a"><div class="followNetwork linkedin"></div></a>
 		</div>
 	</div>
-	<div>
+	<div class="quisuisje">
 		<h3>Qui-suis-je?</h3>
 		<p>Mon nom est Philippe Joulot et je suis un développeur logiciel/web originaire de Viroflay en France.</p>
 	</div>

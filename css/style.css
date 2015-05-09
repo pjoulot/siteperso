@@ -351,3 +351,38 @@ nav a:hover {
 	border-left: solid 10px #078848;
 	padding: 8px;
 }
+
+/* Overwrite pour mobiles*/
+
+@media all and (max-device-width: 480px)
+{
+	#descSite {
+		padding: 0.5em;
+		font-size: 1em;
+	}
+	
+	.contentBack {
+		padding: 0.5em;
+	}
+
+	.circularBlock {
+		height: 5em;
+		width: 5em;
+	}
+	
+	#dashContent form {
+		width: 100%;
+	}
+	
+	#me {
+		width: 20%;
+	}
+	
+	.quisuisje {
+		display: none;
+	}
+	
+	footer > div:nth-child(2) {
+		width: 50%;
+	}
+}
