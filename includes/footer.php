@@ -16,5 +16,6 @@
 <div id="copyright">
     © <?php echo(date("Y")); ?> Philippe Joulot. Tous droits réservés.
 </div>
+<script type="text/javascript" src="js/menuShow.js"></script>
 </body>
 </html>

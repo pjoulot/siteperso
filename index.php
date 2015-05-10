@@ -7,7 +7,7 @@ include('includes/header.php');
 ?>
 
 <div id="dash">
-	<div id="dashContent">
+	<div id="dashContent" class="dashAccueil">
 		<a href="cv.html">
 			<p>Professionnel</p>
 			<img src="images/accueil-template.png" alt="template Joomla" height="220" width="220">
@@ -21,7 +21,7 @@ include('includes/header.php');
 		<a href="projets-personnels.html">
 			<p>Projets personnels</p>
 			<img src="images/accueil-formation.png" alt="template Joomla" height="220" width="220">
-			<p>Cette section vous présentera les projets personnels sur lesquels j'ai travaillé ou travaille encore actuellement.</p>
+			<p>Cette section vous présentera les projets personnels sur lesquels j'ai travaillés ou travaille encore actuellement.</p>
 		</a>
 	</div>
 </div>

@@ -28,7 +28,7 @@ include('includes/header.php');
 			<td><img src ="images/flashlogo.png" alt="The Flash France" class="circularBlock" /></td>
 			<td>
 				<h2>The Flash France</h2>
-				<p>The Flash France est un site sur l'univers de la série télévisée The Flash, à travers laquelle on suit les péripéties du héros de DC Comics Barry Allen, dôté d'un vitesse incroyable.</p>
+				<p>The Flash France est un site sur l'univers de la série télévisée The Flash, à travers laquelle on suit les péripéties du héros de DC Comics Barry Allen, dôté d'une vitesse incroyable.</p>
 				<a href="http://www.the-flash-france.fr">www.the-flash-france.fr</a>
 			</td>
 		</tr>
@@ -36,7 +36,7 @@ include('includes/header.php');
 			<td><img src ="images/chocogrenouille.png" alt="Chocogrenouille" class="circularBlock" /></td>
 			<td>
 				<h2>Application Chocogrenouille</h2>
-				<p>L'application Chocogrenouille est une application qui permet de se prendre en photo avec sa caméra de son téléphone ou sa webcam puis de la transformer en une carte Chocogrenouille comme celles de l'univers Harry Potter.</p>
+				<p>L'application Chocogrenouille est une application qui permet de se prendre en photo avec la caméra de son téléphone ou sa webcam puis de la transformer en une carte Chocogrenouille comme celles de l'univers Harry Potter.</p>
 			</td>
 		</tr>
 	</table>
