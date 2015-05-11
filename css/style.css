@@ -478,6 +478,6 @@ nav a:hover {
 	}
 	
 	#dashContent>a:active {
-		background-color: rgba(17, 165, 155, 0.5);
+		background-color: #40A7DC;
 	}
 }
