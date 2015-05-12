@@ -115,6 +115,12 @@ include('includes/header.php');
 		Extraction de données (Sélecteurs CSS, XPATH, Expression régulières)
 		</td>
 	</tr>
+	<tr>
+		<td>Avril 2015 à Septembre 2015</td>
+		<td>Stage chez Smile<br/>
+		Développement web - Drupal (PHP, Javascript, HTML, CSS)
+		</td>
+	</tr>
 </table>
 </div>
 
