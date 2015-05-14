@@ -481,3 +481,17 @@ nav a:hover {
 		background-color: #40A7DC;
 	}
 }
+
+
+@media all and (min-device-height: 800px)
+{
+	#dash {
+		height: 600px;
+	}
+	
+	#dashContent {
+		margin: auto;
+		align-items: center;
+		height: 100%;
+	}
+}
