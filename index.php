@@ -6,6 +6,12 @@ include('includes/header.php');
 
 ?>
 
+<div id="dashHashtag">
+	<h2>#ILoveTheWeb #IAmAMozillian</h2>
+	<p>Je m’appelle Philippe, je suis passionné par le web et l'Open Source.<br/> Je m'implique notamment pour Mozilla ainsi que d'autres projets libristes.</p>
+	<img class="photo" src="images/me.png" alt="Philippe Joulot">
+</div>
+<div class="lineDesign"></div>
 <div id="dash">
 	<div id="dashContent" class="dashAccueil">
 		<a href="cv.html">

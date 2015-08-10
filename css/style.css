@@ -105,6 +105,10 @@ nav a:hover {
 	flex-wrap: nowrap;
 }
 
+#dashContent.dashAccueil {
+	padding-top: 150px;
+}
+
 #dashContent>a {
 	text-decoration: none;
 	display: block;
@@ -129,6 +133,42 @@ nav a:hover {
 
 #dashContent p {
 	text-align: center;
+}
+
+#dashHashtag {
+	background-image: url("../images/orca_background.jpg");
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+#dashHashtag h2 {
+	margin-bottom: 25px;
+	padding-top: 25px;
+	font-size: 250%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#dashHashtag p {
+	color: white;
+	font-size: 150%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#dashHashtag .photo {
+	border-radius: 50%;
+	border: solid #40A7DC 10px;
+	position: absolute;
+	height: 230px;
+	width: 230px;
+	bottom: -130px;
+	left: 50%;
+	margin-left: -115px;
 }
 
 .contentBack {
