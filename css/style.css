@@ -520,8 +520,44 @@ nav a:hover {
 	#dashContent>a:active {
 		background-color: #40A7DC;
 	}
+	
+	#dashHashtag h2 {
+		margin-bottom: 5px;
+		padding-top: 15px;
+		font-size: 165%;
+	}
+
+	#dashHashtag p {
+		font-size: 110%;
+	}
+
+	#dashHashtag .photo {
+		height: 180px;
+		width: 180px;
+		bottom: -95px;
+		margin-left: -100px;
+	}
 }
 
+@media all and (max-device-width: 800px) and (min-device-width: 481px)
+{
+	#dashHashtag p {
+		font-size: 140%;
+	}
+	
+	#dashHashtag .photo {
+		height: 200px;
+		width: 200px;
+		bottom: -105px;
+		margin-left: -110px;
+	}
+	
+	#dashHashtag h2 {
+		margin-bottom: 5px;
+		padding-top: 15px;
+		font-size: 210%;
+	}
+}
 
 @media all and (min-device-height: 800px)
 {
