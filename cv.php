@@ -13,7 +13,7 @@ include('includes/header.php');
 <div class="lineDesign"></div>
 
 <div class="contentBack">
-	<table class="tableCV">
+	<table class="tableClass tableCV">
 		<tr>
 			<td>2014-2015</td>
 			<td> 	
@@ -61,7 +61,7 @@ include('includes/header.php');
 <div class="lineDesign"></div>
 
 <div class="contentBack">
-<table class="tableCV">
+<table class="tableClass tableCV">
 	<tr>
 		<td>Programmation</td>
 		<td>C, Java, PL/SQL, bash, XML (XPath, XSL, DTD, Xquery)</td>
@@ -102,7 +102,7 @@ include('includes/header.php');
 <div class="lineDesign"></div>
 
 <div class="contentBack">
-<table class="tableCV">
+<table class="tableClass tableCV">
 	<tr>
 		<td>Mai 2012 à Juillet 2012</td>
 		<td>Stage au laboratoire PRISM sur le Projet FURET (Chantiers Furtifs Urbains)<br/>
@@ -133,7 +133,7 @@ include('includes/header.php');
 <div class="lineDesign"></div>
 
 <div class="contentBack">
-<table class="tableCV">
+<table class="tableClass tableCV">
 	<tr>
 		<td>Anglais</td>
 		<td>Niveau scolaire, B2 (selon le Niveau du Conseil de l’Europe)</td>
@@ -154,7 +154,7 @@ include('includes/header.php');
 <div class="lineDesign"></div>
 
 <div class="contentBack">
-<table class="tableCV">
+<table class="tableClass tableCV">
 	<tr>
 		<td>Activités</td>
 		<td>Gestion de sites web personnels, Conventions et salons de science-fiction, Développement d’applications mobiles sous Firefox OS</td>

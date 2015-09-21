@@ -7,7 +7,7 @@ include('includes/header.php');
 ?>
 
 <div class="contentBack">
-	<table class="tableCV">
+	<table class="tableClass">
 		<tr>
 			<td><img src ="images/logoSP.png" alt="Stargate Pegasus" class="circularBlock" /></td>
 			<td>
