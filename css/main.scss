@@ -432,14 +432,19 @@ nav a:hover {
   position: relative;
 }
 
-.post-date {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: block;
+.post-entry h2 {
+  padding: 10px;
+}
+
+.post-infos {
+  float: right;
 }
 
 .post-category {
+  font-weight: bold;
+}
+
+.post-tag {
   background-color: #40A7DC;
   border-radius: 5px;
   padding: 5px;
@@ -448,8 +453,18 @@ nav a:hover {
   text-shadow: 1px 1px 1px black; 
 }
 
+.post-meta {
+  background-color: white;
+  text-align: center;
+padding-bottom: 5px;
+}
+
 body .contentBack .tableClass.tableCV tr td {
 	border-radius: 0;
+}
+
+.pagination {
+  text-align: center;
 }
 
 /* Overwrite pour mobiles*/
