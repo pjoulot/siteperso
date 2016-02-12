@@ -20,6 +20,9 @@ paginate: 3
 paginate_path: "/blog/page:num/"
 
 # Build settings
+permalink: none
 markdown: kramdown
+kramdown:
+  input: GFM
 sass:
-    style: compressed
+  style: compressed
