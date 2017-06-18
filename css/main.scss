@@ -110,7 +110,6 @@ nav a:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	min-height: 55vh;
 }
 
 #dashContent.dashAccueil {
@@ -186,7 +185,6 @@ nav a:hover {
 	padding-left: 10%;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	min-height: 50vh;
 }
 
 h2 {
@@ -324,7 +322,7 @@ table {
 	float: right;
 }
 
-#dashContent .presentation p, #dashContent .text-block p {
+#dashContent .presentation p {
 	text-align: left;
 	font-weight: normal;
 	margin-top: 15px;
@@ -438,10 +436,6 @@ nav a:hover {
   padding: 10px;
 }
 
-.post-entry p {
-  margin-bottom: 10px;
-}
-
 .post-infos {
   float: right;
 }
@@ -463,20 +457,6 @@ nav a:hover {
   background-color: white;
   text-align: center;
 padding-bottom: 5px;
-}
-
-.post-content {
-  background-color: rgba(255,255,255,0.8);
-  border: 1px solid #40a7dc;
-  padding: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  margin-bottom: 10px;
-}
-
-.post-content p {
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 body .contentBack .tableClass.tableCV tr td {
