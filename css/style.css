@@ -1,16 +1,9 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
-
-
-
 @font-face {
     font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
-         url('/assets/fonts/Lato-Regular.ttf') format('truetype'); 
+    src: url('../fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Regular.ttf') format('truetype'); 
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -77,7 +70,7 @@ nav li:first-child a {
 	padding: 0.1em;
 }
 .logoWebsite {
-	background-image: url("/assets/design/philippejoulotlogo_small.png");
+	background-image: url("../images/philippejoulotlogo_small.png");
 	height: 3.4em;
 	width: 3.4em;
 	background-size: cover;
@@ -99,7 +92,7 @@ nav a:hover {
 }
 
 #dash {
-	background-image: url("/assets/design/bckg.png");
+	background-image: url("../images/bckg.png");
 	background-repeat: repeat;
 }
 
@@ -143,7 +136,7 @@ nav a:hover {
 }
 
 #dashHashtag {
-	background-image: url("/assets/design/orca_background.jpg");
+	background-image: url("../images/orca_background.jpg");
 	height: 300px;
 	background-size: cover;
 	background-position: center center;
@@ -179,7 +172,7 @@ nav a:hover {
 }
 
 .contentBack {
-	background-image: url("/assets/design/bckg.png");
+	background-image: url("../images/bckg.png");
 	background-repeat: repeat;
 	padding-right: 10%;
 	padding-left: 10%;
@@ -244,7 +237,7 @@ footer h3 {
 	width: 10%;
 	float: left;
 	margin-left: 10%;
-	background-image: url("/assets/design/me.png");
+	background-image: url("../images/me.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -276,11 +269,11 @@ footer h3 {
 }
 
 .github {
-	background-image: url("/assets/design/gitHub.png");
+	background-image: url("../images/gitHub.png");
 }
 
 .linkedin {
-	background-image: url("/assets/design/linkedin.png");
+	background-image: url("../images/linkedin.png");
 }
 
 .lineDesign {
@@ -467,7 +460,7 @@ body .contentBack .tableClass.tableCV tr td {
 	}
 	
 	.buttonMenu {
-		background-image: url("/assets/design/menu.png");
+		background-image: url("../images/menu.png");
 		height: 3.4em;
 		width: 3.4em;
 		background-size: cover;

@@ -1,18 +1,19 @@
----
-layout: default
----
+<?php
+$titleBalise = 'Philippe Joulot - A propos';
+$titlePage = 'A Propos';
 
-<h1 id="descSite">A Propos</h1>
+include('includes/header.php');
 
-<div class="lineDesign"></div>
+?>
+
 <div id="dash">
 	<div id="dashContent">
 		<div class="presentation">
-		    <img src="assets/images/philippejoulotlogo_300.png" alt="Philippe Joulot Logo" class="floatLeft circleBlack" width="210px" height="210px" />
+		    <img src="images/philippejoulotlogo_300.png" alt="Philippe Joulot Logo" class="floatLeft circleBlack" width="210px" height="210px" />
 			<p>
 				Mon nom est Philippe Joulot, je suis originaire de Vélizy-Villacoublay en France et vit actuellement non loin de là à Viroflay. Ma passion pour l'informatique et plus précisément pour le domaine du web m'a menée au métier de développeur logiciel.
 			</p>
-			<img src="assets/images/danpayne.png" alt="Philippe Joulot Logo" class="floatRight circleBlack" width="200px" height="200px" />
+			<img src="images/danpayne.png" alt="Philippe Joulot Logo" class="floatRight circleBlack" width="200px" height="200px" />
 			<p>
 				J'aime énormément programmer et réaliser les idées qui me traversent l'esprit. Je mêle mes autres passions à celle de l'informatique. Je développe essentiellement des applications et sites web, mais code plus rarement dans d'autres contextes. Je porte un intérêt particulier à l'Open Source et suis de de près les avancements du projet Boot To Gecko plus communément appelé Firefox OS.
 			</p>
@@ -23,3 +24,7 @@ layout: default
 		</div>
 	</div>
 </div>
+
+<?php
+include('includes/footer.php');
+?>

@@ -1,11 +1,11 @@
----
-layout: default
----
+<?php
+$titleBalise = 'Philippe Joulot - CV';
+$titlePage = 'CV - Philippe Joulot';
 
-<h1 id="descSite">
-	CV - Philippe Joulot</h1>
+include('includes/header.php');
 
-<div class="lineDesign"></div>
+?>
+
 <div class="content">
 	<h2>Formation</h2>
 </div>
@@ -165,3 +165,7 @@ layout: default
 	</tr>
 </table>
 </div>
+
+<?php
+include('includes/footer.php');
+?>

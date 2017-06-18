@@ -14,6 +14,8 @@
 	</div>
 </footer>
 <div id="copyright">
-    © 2016 Philippe Joulot. Tous droits réservés.
+    © <?php echo(date("Y")); ?> Philippe Joulot. Tous droits réservés.
 </div>
 <script type="text/javascript">function menuShow(){var classNom=document.getElementById('mainMenu').className;if(classNom=='visible'){document.getElementById('mainMenu').className='hidden';}else{document.getElementById('mainMenu').className='visible';}}</script>
+</body>
+</html>
