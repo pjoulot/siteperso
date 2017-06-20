@@ -1,15 +1,24 @@
 <nav>
-	<div id="menuMobile">
-		<a href="http://www.philippejoulot.fr"><div class="logoWebsite"></div></a>
-		<div class="buttonMenu" onclick="menuShow();"></div>
-	</div>
-	<ul id="mainMenu">
-	   <li><a href="{{ site.url }}"><div class="logoWebsite"></div></a></li>
-	   <li><a href="{{base}}/cv.html"><span>CV</span></a></li>
-	   <li><a href="{{base}}/projets-benevoles.html"><span>Projets bénévoles</span></a></li>
-	   <li><a href='{{base}}/projets-personnels.html'><span>Projets personnels</span></a></li>
-           <li><a href="{{base}}/blog"><span>Blog</span></a></li>
-	   <li><a href="{{base}}/a-propos.html"><span>A Propos</span></a></li>
-	   <li><a href="{{base}}/contact.html"><span>Contact</span></a></li>
-	</ul>
+  <div id="menuMobile">
+    {% if site.base_lang == page.lang %}
+      <a href="{{ site.url }}"><div class="logoWebsite"></div></a>
+    {% else %}
+      <a href="{{ site.url }}/{{ page.lang }}"><div class="logoWebsite"></div></a>
+    {% endif %}
+    <div class="buttonMenu" onclick="menuShow();"></div>
+  </div>
+  <ul id="mainMenu">
+    {% if site.base_lang == page.lang %}
+      <li><a href="{{ site.url }}"><div class="logoWebsite"></div></a></li>
+    {% else %}
+      <li><a href="{{ site.url }}/{{ page.lang }}"><div class="logoWebsite"></div></a></li>
+    {% endif %}
+
+    {% assign pages=site.pages | where:"lang", page.lang %}
+    {% for my_page in pages %}
+      {% if my_page.title %}
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><span>{{ my_page.title }}</span></a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </nav>
