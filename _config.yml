@@ -56,3 +56,17 @@ paginate_path: "/blog/page:num/"
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Footer texts
+copyright:
+  en: Philippe Joulot. All rights reserved.
+  fr: Philippe Joulot. Tous droits réservés.
+follow_me:
+  en: Follow me
+  fr: Suivez-moi
+whoami:
+  en: Who am I?
+  fr: Qui-suis-je?
+footer_description:
+  en: My name is Philippe Joulot, and I am a software/web developer from Viroflay located in France.
+  fr: Mon nom est Philippe Joulot et je suis un développeur logiciel/web originaire de Viroflay en France.

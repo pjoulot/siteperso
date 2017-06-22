@@ -1,19 +1,19 @@
 <div class="lineDesign"></div>
 <footer>
-	<div id="me"></div>
-	<div>
-		<h3>Suivez-moi</h3>
-		<div>
-			<a href="https://github.com/pjoulot"><div class="followNetwork github"></div></a>
-			<a href="http://fr.linkedin.com/pub/philippe-joulot/89/490/b7a"><div class="followNetwork linkedin"></div></a>
-		</div>
-	</div>
-	<div class="quisuisje">
-		<h3>Qui-suis-je?</h3>
-		<p>Mon nom est Philippe Joulot et je suis un développeur logiciel/web originaire de Viroflay en France.</p>
-	</div>
+  <div id="me"></div>
+  <div>
+    <h3>{{ site.follow_me[page.lang] }}</h3>
+    <div>
+      <a href="https://github.com/pjoulot"><div class="followNetwork github"></div></a>
+      <a href="http://fr.linkedin.com/pub/philippe-joulot/89/490/b7a"><div class="followNetwork linkedin"></div></a>
+    </div>
+  </div>
+  <div class="quisuisje">
+    <h3>{{ site.whoami[page.lang] }}</h3>
+    <p>{{ site.footer_description[page.lang] }}</p>
+  </div>
 </footer>
 <div id="copyright">
-    © 2016 - 2017 Philippe Joulot. Tous droits réservés.
+  © 2016 - 2017 {{ site.copyright[page.lang] }}
 </div>
 <script type="text/javascript">function menuShow(){var classNom=document.getElementById('mainMenu').className;if(classNom=='visible'){document.getElementById('mainMenu').className='hidden';}else{document.getElementById('mainMenu').className='visible';}}</script>
