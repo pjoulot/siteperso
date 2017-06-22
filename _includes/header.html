@@ -22,7 +22,11 @@
     {% endfor %}
   </ul>
   <div class="language-switcher">
-    <a href="{{site.url }}/en">EN</a> 
-    <a href="{{site.url }}">FR</a>
+    {% assign versions=site.pages | where:"ref", page.ref %}
+    {% for version in versions %}
+      {% if version.lang != page.lang %}
+        <a href="{{ site.url }}/{{site.base}}{{ version.url }}">{{ version.lang }}</a>
+      {% endif %}
+    {% endfor %}
   </div>
 </nav>
