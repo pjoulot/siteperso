@@ -27,11 +27,6 @@ url: "http://www.philippejoulot.fr" # the base hostname & protocol for your site
 twitter_username: stargayte
 github_username:  pjoulot
 
-#Pages
-index:
-  en: home.html
-  fr: index.html
-
 # Build settings
 markdown: kramdown
 kramdown:
