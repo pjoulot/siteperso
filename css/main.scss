@@ -17,417 +17,429 @@
 }
 
 html {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html  body{
-	margin: 0;
-	padding: 0;
-	font-family: "Lato",sans-serif;
-	background-color: #4B4B4B;
-	
+  margin: 0;
+  padding: 0;
+  font-family: "Lato",sans-serif;
+  background-color: #4B4B4B;
+  
 }
 
 nav{
-	background-color: #2D2D2D;
-	display: block;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	width: 100%;
+  background-color: #2D2D2D;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
 }
 
 nav ul {
-	margin: auto;
-	padding: 0;
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	margin-top: 0;
-	align-items: flex-start;
-	justify-content: center;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 0;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 nav li {
-	display: block;
-	margin: 0;
-	position: relative;
-	list-style-type: none;
-	font-size: 1.2em;
-	text-transform: none;
-	font-family: "Lato",Arial,Helvetica,sans-serif;
-	transition: color 0.4s, background 0.4s;
+  display: block;
+  margin: 0;
+  position: relative;
+  list-style-type: none;
+  font-size: 1.2em;
+  text-transform: none;
+  font-family: "Lato",Arial,Helvetica,sans-serif;
+  transition: color 0.4s, background 0.4s;
 }
 
 nav li:hover {
-	background-color: #40A7DC;
-	transition: color 0.4s, background 0.4s;
+  background-color: #40A7DC;
+  transition: color 0.4s, background 0.4s;
 }
 
 nav a {
-	display: block;
-	text-decoration: none;
-	color: #BABCB8;
-	padding: 1.2em;
+  display: block;
+  text-decoration: none;
+  color: #BABCB8;
+  padding: 1.2em;
 }
 
 nav li:first-child a {
-	padding: 0.1em;
+  padding: 0.1em;
 }
 .logoWebsite {
-	background-image: url("/assets/design/philippejoulotlogo_small.png");
-	height: 3.4em;
-	width: 3.4em;
-	background-size: cover;
+  background-image: url("/assets/design/philippejoulotlogo_small.png");
+  height: 3.4em;
+  width: 3.4em;
+  background-size: cover;
 }
 
 nav a:hover {
-	color: white;
+  color: white;
+}
+
+.language-switcher {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  margin-top: 5px;
+  
+  a+a {
+    border-left: solid 1px #BABCB8;
+  }
 }
 
 #descSite {
-	background-color: #F9FBFF;
-	padding: 1em;
-	font-size: 1.2em;
-	font-weight: bold;
-	text-align: center;
-	font-style: italic;
-	margin: 0;
-	font-family: "Lato",Arial,Helvetica,sans-serif;
+  background-color: #F9FBFF;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  margin: 0;
+  font-family: "Lato",Arial,Helvetica,sans-serif;
 }
 
 #dash {
-	background-image: url("/assets/design/bckg.png");
-	background-repeat: repeat;
+  background-image: url("/assets/design/bckg.png");
+  background-repeat: repeat;
 }
 
 #dashContent {
-	margin: auto;
-	width:80%;
-	margin-top: 0;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	min-height: 55vh;
+  margin: auto;
+  width:80%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-height: 55vh;
 }
 
 #dashContent.dashAccueil {
-	padding-top: 150px;
+  padding-top: 150px;
 }
 
 #dashContent>a {
-	text-decoration: none;
-	display: block;
-	flex: 1;
-	padding: 1em;
+  text-decoration: none;
+  display: block;
+  flex: 1;
+  padding: 1em;
 }
 
 #dashContent>a:hover {
-	background-color: rgba(17, 165, 155, 0.5);
-	cursor: pointer;
-	transition: background 0.6s;
+  background-color: rgba(17, 165, 155, 0.5);
+  cursor: pointer;
+  transition: background 0.6s;
 }
 
 #dashContent>a>img {
-	display: block;
-	margin: auto;
+  display: block;
+  margin: auto;
 }
 
 #dashContent p:first-child {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 #dashContent p {
-	text-align: center;
+  text-align: center;
 }
 
 #dashHashtag {
-	background-image: url("/assets/design/orca_background.jpg");
-	height: 300px;
-	background-size: cover;
-	background-position: center center;
-	text-align: center;
-	color: white;
-	position: relative;
+  background-image: url("/assets/design/orca_background.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
 #dashHashtag h2 {
-	margin-bottom: 25px;
-	padding-top: 25px;
-	font-size: 250%;
-	padding-right: 10px;
-	padding-left: 10px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  font-size: 250%;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #dashHashtag p {
-	color: white;
-	font-size: 150%;
-	padding-right: 10px;
-	padding-left: 10px;
+  color: white;
+  font-size: 150%;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #dashHashtag .photo {
-	border-radius: 50%;
-	border: solid #40A7DC 10px;
-	position: absolute;
-	height: 230px;
-	width: 230px;
-	bottom: -130px;
-	left: 50%;
-	margin-left: -115px;
+  border-radius: 50%;
+  border: solid #40A7DC 10px;
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  bottom: -130px;
+  left: 50%;
+  margin-left: -115px;
 }
 
 .contentBack {
-	background-image: url("/assets/design/bckg.png");
-	background-repeat: repeat;
-	padding-right: 10%;
-	padding-left: 10%;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	min-height: 50vh;
+  background-image: url("/assets/design/bckg.png");
+  background-repeat: repeat;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  min-height: 50vh;
 }
 
 h2 {
-	padding: 0;
-	margin: 0;
-	font-family: "Lato",sans-serif;
-	font-size: 1.3em;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato",sans-serif;
+  font-size: 1.3em;
 }
 
 .content {
-	background-color: #F9FBFF;
-	padding-right: 10%;
-	padding-left: 10%;
-	padding-top: 1em;
-	padding-bottom: 1em;
+  background-color: #F9FBFF;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 p {
-	color: #333;
-	margin: 0;
+  color: #333;
+  margin: 0;
 }
 
 footer {
-	min-height: 100px;
-	width: 100%;
-	background: rgba(45,45,45, 1);
+  min-height: 100px;
+  width: 100%;
+  background: rgba(45,45,45, 1);
 }
 
 footer>div:nth-child(2) {
-	float: left;
-	width: 20%;
+  float: left;
+  width: 20%;
 }
 
 footer>div:last-child {
-	float: right;
-	width: 20%;
-	padding-right: 10%;
+  float: right;
+  width: 20%;
+  padding-right: 10%;
 }
 
 footer p {
-	color: #E8E8E8;
-	font-size: 0.9em;
+  color: #E8E8E8;
+  font-size: 0.9em;
 }
 
 footer h3 {
-	margin: 0;
-	color: #E8E8E8;
-	font-size: 1.0em;
-	margin-top: 0.5em;
-	border-bottom: solid 1px #40A7DC;
-	margin-bottom: 0.5em;	
+  margin: 0;
+  color: #E8E8E8;
+  font-size: 1.0em;
+  margin-top: 0.5em;
+  border-bottom: solid 1px #40A7DC;
+  margin-bottom: 0.5em;  
 }
 
 #me {
-	min-height: 100px;
-	height: 100%;
-	width: 10%;
-	float: left;
-	margin-left: 10%;
-	background-image: url("/assets/design/me.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	margin-right: 2%;
+  min-height: 100px;
+  height: 100%;
+  width: 10%;
+  float: left;
+  margin-left: 10%;
+  background-image: url("/assets/design/me.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 2%;
 }
 
 #copyright {
-	background-color: #4B4B4B;
-	color: #E8E8E8;
-	font-size: 0.8em;
-	padding: 0.5em;
-	padding-left: 10%;
+  background-color: #4B4B4B;
+  color: #E8E8E8;
+  font-size: 0.8em;
+  padding: 0.5em;
+  padding-left: 10%;
 }
 
 .followNetwork {
-	height: 3em;
-	width: 3em;
-	border-radius: 50%;
-	background-color: #4B4B4B;
-	float: left;
-	margin-right: 0.5em;
-	background-size: cover;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #4B4B4B;
+  float: left;
+  margin-right: 0.5em;
+  background-size: cover;
 }
 
 .followNetwork:hover {
-	background-color: #40A7DC;
-	cursor: pointer;
-	transition: background 0.6s;
+  background-color: #40A7DC;
+  cursor: pointer;
+  transition: background 0.6s;
 }
 
 .github {
-	background-image: url("/assets/design/gitHub.png");
+  background-image: url("/assets/design/gitHub.png");
 }
 
 .linkedin {
-	background-image: url("/assets/design/linkedin.png");
+  background-image: url("/assets/design/linkedin.png");
 }
 
 .lineDesign {
-	background-color: #40A7DC;
-	width: 100%;
-	height: 10px;
+  background-color: #40A7DC;
+  width: 100%;
+  height: 10px;
 }
 
 .gras {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 table {
-	border-collapse:separate; 
-	border-spacing:1em;
-	width: 100%;
+  border-collapse:separate; 
+  border-spacing:1em;
+  width: 100%;
 }
 
 .tableClass tr>td:first-child {
-	width: 25%;
-	color: black;
-	font-weight: bold;
+  width: 25%;
+  color: black;
+  font-weight: bold;
 }
 
 .circularBlock {
-	display: block;
-	height: 8em;
-	width: 8em;
-	border-radius: 50%;
-	background-color: white;
-	border: solid 8px #40A7DC;
+  display: block;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 8px #40A7DC;
 }
 
 .floatLeft {
-	float: left;
+  float: left;
 }
 
 .floatRight {
-	float: right;
+  float: right;
 }
 
 #dashContent .presentation p, #dashContent .text-block p {
-	text-align: left;
-	font-weight: normal;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	font-size: 1.1em;
-	text-align: justify;
+  text-align: left;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  text-align: justify;
 }
 
 .circleBlack {
-	border-radius: 50%;
-	border: solid 8px black;
-	margin: 20px;
+  border-radius: 50%;
+  border: solid 8px black;
+  margin: 20px;
 }
 
 #dashContent form {
-	width: 50%;
-	margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 input, textarea {
-	width: 100%;
-	font-size: 1em;
+  width: 100%;
+  font-size: 1em;
 }
 
 select {
-	font-size: 1em;
-	color: #333333;
+  font-size: 1em;
+  color: #333333;
 }
 
 input[type="submit"] {
-	font-weight: bold;
-	color: #333333;
+  font-weight: bold;
+  color: #333333;
 }
 
 input[name="mail"] {
-	display: none;
+  display: none;
 }
 
 #dashContent  form p {
-	text-align: left;
-	margin-bottom: 10px;
-	margin-top: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 a {
-	color: #1A668E;
-	text-decoration: none;
+  color: #1A668E;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .red {
-	color: red;
+  color: red;
 }
 
 .green {
-	color: green;
+  color: green;
 }
 
 .gras {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .erreur {
-	color: #E32529;
-	background-color: #F2AEAE;
-	border: solid 1px #E32529;
-	border-left: solid 10px #E32529;
-	padding: 8px;
+  color: #E32529;
+  background-color: #F2AEAE;
+  border: solid 1px #E32529;
+  border-left: solid 10px #E32529;
+  padding: 8px;
 }
 
 .valide {
-	color: #078848;
-	background-color: #E3FFEC;
-	border: solid 1px #078848;
-	border-left: solid 10px #078848;
-	padding: 8px;
+  color: #078848;
+  background-color: #E3FFEC;
+  border: solid 1px #078848;
+  border-left: solid 10px #078848;
+  padding: 8px;
 }
 
 #menuMobile {
-	display: none;
+  display: none;
 }
 
 .tableClass td:not(:first-child) {
-	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.8);
-	border: 1px solid rgb(64, 167, 220);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(64, 167, 220);
 }
 
 .tableClass tr:nth-child(2n) td:not(:first-child) {
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .tableClass tr:nth-child(2n+1) td:not(:first-child) {
-	border-bottom-right-radius: 20px;
-	border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .tableClass tr td {
@@ -480,7 +492,7 @@ padding-bottom: 5px;
 }
 
 body .contentBack .tableClass.tableCV tr td {
-	border-radius: 0;
+  border-radius: 0;
 }
 
 .pagination {
@@ -491,165 +503,165 @@ body .contentBack .tableClass.tableCV tr td {
 
 @media all and (max-device-width: 480px)
 {
-	#descSite {
-		padding: 0.5em;
-		font-size: 1em;
-	}
-	
-	.contentBack {
-		padding: 0.5em;
-	}
+  #descSite {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  
+  .contentBack {
+    padding: 0.5em;
+  }
 
-	.circularBlock {
-		height: 5em;
-		width: 5em;
-	}
-	
-	#dashContent form {
-		width: 100%;
-	}
-	
-	#me {
-		width: 20%;
-	}
-	
-	.quisuisje {
-		display: none;
-	}
-	
-	footer > div:nth-child(2) {
-		width: 50%;
-	}
-	
-	.buttonMenu {
-		background-image: url("/assets/design/menu.png");
-		height: 3.4em;
-		width: 3.4em;
-		background-size: cover;
-		float: right;
-	}
-	
-	.buttonMenu:hover {
-		cursor: pointer;
-	}
-	
-	.buttonMenu:active {
-		background-color: #40A7DC;
-	}
+  .circularBlock {
+    height: 5em;
+    width: 5em;
+  }
+  
+  #dashContent form {
+    width: 100%;
+  }
+  
+  #me {
+    width: 20%;
+  }
+  
+  .quisuisje {
+    display: none;
+  }
+  
+  footer > div:nth-child(2) {
+    width: 50%;
+  }
+  
+  .buttonMenu {
+    background-image: url("/assets/design/menu.png");
+    height: 3.4em;
+    width: 3.4em;
+    background-size: cover;
+    float: right;
+  }
+  
+  .buttonMenu:hover {
+    cursor: pointer;
+  }
+  
+  .buttonMenu:active {
+    background-color: #40A7DC;
+  }
 
-	#menuMobile {
-		display: block;
-		margin: 0;
-		padding: 0;
-	}
-	
-	#menuMobile:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-	
-	#menuMobile a {
-		padding: 0;
-	}
-	
-	#menuMobile a:active {
-		background-color: #40A7DC;
-	}
-	
-	#menuMobile .logoWebsite {
-		position: absolute;
-		float: left;
-	}
-	
-	ul .logoWebsite {
-		display: none;
-	}
-	
-	nav ul {
-		display: none;
-		flex-direction: column;
-	}
-	
-	nav ul li:not(:first-child) {
-		border-top: solid 1px #ACAEAA;
-		font-size: 1.0em;
-	}
-	
-	nav li a {
-		color: white;
-	}
-	
-	nav li a:active, footer a {
-		background-color: #40A7DC;
-	}
-	
-	.visible {
-		display: block;
-	}
-	.hidden {
-		display: none;
-	}
-	
-	#dashContent {
-		flex-direction: column;
-	}
-	
-	#dashContent.dashAccueil {
-		width: 100%;
-	}
-	
-	#dashContent>a:active {
-		background-color: #40A7DC;
-	}
-	
-	#dashHashtag h2 {
-		margin-bottom: 5px;
-		padding-top: 15px;
-		font-size: 165%;
-	}
+  #menuMobile {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menuMobile:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #menuMobile a {
+    padding: 0;
+  }
+  
+  #menuMobile a:active {
+    background-color: #40A7DC;
+  }
+  
+  #menuMobile .logoWebsite {
+    position: absolute;
+    float: left;
+  }
+  
+  ul .logoWebsite {
+    display: none;
+  }
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  
+  nav ul li:not(:first-child) {
+    border-top: solid 1px #ACAEAA;
+    font-size: 1.0em;
+  }
+  
+  nav li a {
+    color: white;
+  }
+  
+  nav li a:active, footer a {
+    background-color: #40A7DC;
+  }
+  
+  .visible {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  #dashContent {
+    flex-direction: column;
+  }
+  
+  #dashContent.dashAccueil {
+    width: 100%;
+  }
+  
+  #dashContent>a:active {
+    background-color: #40A7DC;
+  }
+  
+  #dashHashtag h2 {
+    margin-bottom: 5px;
+    padding-top: 15px;
+    font-size: 165%;
+  }
 
-	#dashHashtag p {
-		font-size: 110%;
-	}
+  #dashHashtag p {
+    font-size: 110%;
+  }
 
-	#dashHashtag .photo {
-		height: 180px;
-		width: 180px;
-		bottom: -95px;
-		margin-left: -100px;
-	}
+  #dashHashtag .photo {
+    height: 180px;
+    width: 180px;
+    bottom: -95px;
+    margin-left: -100px;
+  }
 }
 
 @media all and (max-device-width: 800px) and (min-device-width: 481px)
 {
-	#dashHashtag p {
-		font-size: 140%;
-	}
-	
-	#dashHashtag .photo {
-		height: 200px;
-		width: 200px;
-		bottom: -105px;
-		margin-left: -110px;
-	}
-	
-	#dashHashtag h2 {
-		margin-bottom: 5px;
-		padding-top: 15px;
-		font-size: 210%;
-	}
+  #dashHashtag p {
+    font-size: 140%;
+  }
+  
+  #dashHashtag .photo {
+    height: 200px;
+    width: 200px;
+    bottom: -105px;
+    margin-left: -110px;
+  }
+  
+  #dashHashtag h2 {
+    margin-bottom: 5px;
+    padding-top: 15px;
+    font-size: 210%;
+  }
 }
 
 @media all and (min-device-height: 800px)
 {
-	#dash {
-		height: 600px;
-	}
-	
-	#dashContent {
-		margin: auto;
-		align-items: center;
-		height: 100%;
-	}
+  #dash {
+    height: 600px;
+  }
+  
+  #dashContent {
+    margin: auto;
+    align-items: center;
+    height: 100%;
+  }
 }
