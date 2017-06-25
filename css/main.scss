@@ -16,6 +16,10 @@
     text-rendering: optimizeLegibility;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -27,6 +31,21 @@ html  body{
   font-family: "Lato",sans-serif;
   background-color: #4B4B4B;
   
+}
+
+.button-link-reverse {
+  border: 2px solid #02C7F7;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 18px;
+  padding: 0px 28px; 
+  color: #02C7F7;
+  transition: color 0.2s, background 0.2s;
+}
+
+.selected, .button-link-reverse, .button-link-reverse:hover {
+  background-color: #02C7F7;
+  color: #FFF;
 }
 
 nav{
@@ -54,23 +73,26 @@ nav li {
   display: block;
   margin: 0;
   position: relative;
+  box-sizing: border-box;
   list-style-type: none;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: none;
   font-family: "Lato",Arial,Helvetica,sans-serif;
-  transition: color 0.4s, background 0.4s;
+  transition: color 0.3s, background 0.3s;
+  height: 62px;
+  
+  &:not(:last-child):hover, .selected {
+    border-bottom: solid 6px #02C7F7;
+    transition: color 0.3s, border 0.3s;
+  }
 }
 
-nav li:hover {
-  background-color: #40A7DC;
-  transition: color 0.4s, background 0.4s;
-}
-
-nav a {
+nav a, .language-switcher>* {
   display: block;
   text-decoration: none;
   color: #BABCB8;
-  padding: 1.2em;
+  padding: 20px;
+  height: 62px;
 }
 
 nav li:first-child a {
@@ -87,12 +109,21 @@ nav a:hover {
   color: white;
 }
 
+nav .button-link-reverse {
+  margin-top: 12px;
+}
+
 .language-switcher {
   position: absolute;
   right: 0;
   top: 0;
   display: flex;
   margin-top: 5px;
+  text-transform: uppercase;
+
+  span {
+    color: #02C7F7;
+  }
 }
 
 #descSite {
@@ -178,7 +209,7 @@ nav a:hover {
 
 #dashHashtag .photo {
   border-radius: 50%;
-  border: solid #40A7DC 10px;
+  border: solid #02C7F7 10px;
   position: absolute;
   height: 230px;
   width: 230px;
@@ -244,7 +275,7 @@ footer h3 {
   color: #E8E8E8;
   font-size: 1.0em;
   margin-top: 0.5em;
-  border-bottom: solid 1px #40A7DC;
+  border-bottom: solid 1px #02C7F7;
   margin-bottom: 0.5em;  
 }
 
@@ -280,7 +311,7 @@ footer h3 {
 }
 
 .followNetwork:hover {
-  background-color: #40A7DC;
+  background-color: #02C7F7;
   cursor: pointer;
   transition: background 0.6s;
 }
@@ -294,7 +325,7 @@ footer h3 {
 }
 
 .lineDesign {
-  background-color: #40A7DC;
+  background-color: #02C7F7;
   width: 100%;
   height: 10px;
 }
@@ -321,7 +352,7 @@ table {
   width: 8em;
   border-radius: 50%;
   background-color: white;
-  border: solid 8px #40A7DC;
+  border: solid 8px #02C7F7;
 }
 
 .floatLeft {
@@ -459,7 +490,7 @@ nav a:hover {
 }
 
 .post-tag {
-  background-color: #40A7DC;
+  background-color: #02C7F7;
   border-radius: 5px;
   padding: 5px;
   line-height: 35px;
@@ -475,7 +506,7 @@ padding-bottom: 5px;
 
 .post-content {
   background-color: rgba(255,255,255,0.8);
-  border: 1px solid #40a7dc;
+  border: 1px solid #02C7F7;
   padding: 20px;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -542,7 +573,7 @@ body .contentBack .tableClass.tableCV tr td {
   }
   
   .buttonMenu:active {
-    background-color: #40A7DC;
+    background-color: #02C7F7;
   }
 
   #menuMobile {
@@ -562,7 +593,7 @@ body .contentBack .tableClass.tableCV tr td {
   }
   
   #menuMobile a:active {
-    background-color: #40A7DC;
+    background-color: #02C7F7;
   }
   
   #menuMobile .logoWebsite {
@@ -589,7 +620,7 @@ body .contentBack .tableClass.tableCV tr td {
   }
   
   nav li a:active, footer a {
-    background-color: #40A7DC;
+    background-color: #02C7F7;
   }
   
   .visible {
@@ -608,7 +639,7 @@ body .contentBack .tableClass.tableCV tr td {
   }
   
   #dashContent>a:active {
-    background-color: #40A7DC;
+    background-color: #02C7F7;
   }
   
   #dashHashtag h2 {

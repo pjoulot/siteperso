@@ -52,6 +52,11 @@ paginate_path: "/blog/page:num/"
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Languages names
+languages:
+  en: English
+  fr: Français
+
 # Footer texts
 copyright:
   en: Philippe Joulot. All rights reserved.

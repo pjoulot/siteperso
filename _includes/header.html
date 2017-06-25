@@ -15,9 +15,20 @@
     {% endif %}
 
     {% assign pages=site.pages | where:"lang", page.lang %}
+    {% assign selected = '' %}
     {% for my_page in pages %}
-      {% if my_page.title %}
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><span>{{ my_page.title }}</span></a></li>
+      {% if my_page.ref == page.ref %}
+        {% assign selected = 'class="selected"' %}
+      {% else %}
+        {% assign selected = '' %}
+      {% endif %}
+      {% if my_page.title and my_page.ref != 'contact' %}
+        <li><a {{ selected }} href="{{ my_page.url | prepend: site.baseurl }}"><span>{{ my_page.title }}</span></a></li>
+      {% endif %}
+    {% endfor %}
+    {% for my_page in pages %}
+      {% if my_page.ref == 'contact' %}
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="button-link-reverse"><span>{{ my_page.title }}</span></a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -25,7 +36,9 @@
     {% assign versions=site.pages | where:"ref", page.ref %}
     {% for version in versions %}
       {% if version.lang != page.lang %}
-        <a href="{{ site.url }}{{site.base}}{{ version.url }}">{{ version.lang }}</a>
+        <a href="{{ site.url }}{{site.base}}{{ version.url }}">{{ site.languages[version.lang] }}</a>
+      {% else %}
+        <span>{{ site.languages[version.lang] }}</span>
       {% endif %}
     {% endfor %}
   </div>
