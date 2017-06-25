@@ -43,7 +43,7 @@ html  body{
   transition: color 0.2s, background 0.2s;
 }
 
-.selected, .button-link-reverse, .button-link-reverse:hover {
+.button-link-reverse:hover {
   background-color: #02C7F7;
   color: #FFF;
 }
@@ -81,7 +81,7 @@ nav li {
   transition: color 0.3s, background 0.3s;
   height: 62px;
   
-  &:not(:last-child):hover, .selected {
+  &:not(:last-child):not(:first-child):hover, &.selected {
     border-bottom: solid 6px #02C7F7;
     transition: color 0.3s, border 0.3s;
   }
@@ -118,7 +118,7 @@ nav .button-link-reverse {
   right: 0;
   top: 0;
   display: flex;
-  margin-top: 5px;
+  z-index: 2;
   text-transform: uppercase;
 
   span {
@@ -530,6 +530,10 @@ body .contentBack .tableClass.tableCV tr td {
 
 @media all and (max-device-width: 480px)
 {
+  .hidden-mobile {
+    display: none;
+  }
+
   #descSite {
     padding: 0.5em;
     font-size: 1em;
@@ -580,6 +584,10 @@ body .contentBack .tableClass.tableCV tr td {
     display: block;
     margin: 0;
     padding: 0;
+    
+    a {
+      display: inline;
+    }
   }
   
   #menuMobile:after {
@@ -606,21 +614,34 @@ body .contentBack .tableClass.tableCV tr td {
   }
   
   nav ul {
-    display: none;
     flex-direction: column;
-  }
+    
+    li {
+      width: 100%;
+
+      &:not(:first-child), &.selected:not(:first-child) {
+        border-bottom: 0;
+        border-top: solid 1px #ACAEAA;
+        font-size: 1.0em;
+      }
+
+      a {
+        color: white;
+      }
+    }
   
-  nav ul li:not(:first-child) {
-    border-top: solid 1px #ACAEAA;
-    font-size: 1.0em;
-  }
-  
-  nav li a {
-    color: white;
+    .button-link-reverse {
+      border: none;
+      color: white;
+    }
   }
   
   nav li a:active, footer a {
     background-color: #02C7F7;
+  }
+
+  .language-switcher {
+    position: static;
   }
   
   .visible {
