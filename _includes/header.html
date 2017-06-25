@@ -25,7 +25,7 @@
     {% assign versions=site.pages | where:"ref", page.ref %}
     {% for version in versions %}
       {% if version.lang != page.lang %}
-        <a href="{{ site.url }}/{{site.base}}{{ version.url }}">{{ version.lang }}</a>
+        <a href="{{ site.url }}{{site.base}}{{ version.url }}">{{ version.lang }}</a>
       {% endif %}
     {% endfor %}
   </div>
