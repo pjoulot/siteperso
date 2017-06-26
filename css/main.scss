@@ -513,6 +513,10 @@ body .contentBack .tableClass.tableCV tr td {
   h3 {
     text-transform: uppercase;
   }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .dark-tile {
@@ -574,6 +578,15 @@ body .contentBack .tableClass.tableCV tr td {
   
   .quisuisje {
     display: none;
+  }
+
+  .tile {
+    flex-direction: column;
+    padding: 30px 10%;
+
+    > div {
+      width: 100%;
+    }
   }
 
   footer {
