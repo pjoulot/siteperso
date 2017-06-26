@@ -29,7 +29,6 @@ html  body{
   margin: 0;
   padding: 0;
   font-family: "Lato",sans-serif;
-  background-color: #4B4B4B;
   
 }
 
@@ -42,7 +41,8 @@ html  body{
   height: 38px;
   line-height: 38px;
   border-radius: 18px;
-  padding: 0px 28px; 
+  padding: 0px 28px;
+  display: inline-block;
   color: #02C7F7;
   transition: color 0.2s, background 0.2s;
 }
@@ -50,6 +50,24 @@ html  body{
 .button-link-reverse:hover {
   background-color: #02C7F7;
   color: #FFF;
+  text-decoration: none;
+}
+
+.button-link {
+  border: 2px solid #02C7F7;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 18px;
+  padding: 0px 28px; 
+  color: #FFF;
+  background-color: #02C7F7;
+  transition: color 0.2s, background 0.2s;
+}
+
+.button-link:hover {
+  color: #10171F;
+  text-decoration: none;
 }
 
 nav{
@@ -147,59 +165,16 @@ nav .button-link-reverse {
   font-family: "Lato",Arial,Helvetica,sans-serif;
 }
 
-#dash {
-  background-image: url("/assets/design/bckg.png");
-  background-repeat: repeat;
-}
-
-#dashContent {
-  margin: auto;
-  width:80%;
-  margin-top: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  min-height: 55vh;
-}
-
-#dashContent.dashAccueil {
-  padding-top: 150px;
-}
-
-#dashContent>a {
-  text-decoration: none;
-  display: block;
-  flex: 1;
-  padding: 1em;
-}
-
-#dashContent>a:hover {
-  background-color: rgba(17, 165, 155, 0.5);
-  cursor: pointer;
-  transition: background 0.6s;
-}
-
-#dashContent>a>img {
-  display: block;
-  margin: auto;
-}
-
-#dashContent p:first-child {
-  font-weight: bold;
-}
-
-#dashContent p {
-  text-align: center;
-}
-
 #dashHashtag {
   background-image: url("/assets/design/orca_background.jpg");
-  height: 300px;
+  height: 500px;
   background-size: cover;
   background-position: center center;
   text-align: center;
   color: white;
   position: relative;
+  padding-top: 50px;
+  text-shadow: 2px 2px #10171F;
 }
 
 #dashHashtag h2 {
@@ -348,6 +323,15 @@ table {
   border: solid 8px #02C7F7;
 }
 
+.circularBigBlock {
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: white;
+  margin: auto;
+}
+
 .floatLeft {
   float: left;
 }
@@ -356,24 +340,10 @@ table {
   float: right;
 }
 
-#dashContent .presentation p, #dashContent .text-block p {
-  text-align: left;
-  font-weight: normal;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 1.1em;
-  text-align: justify;
-}
-
 .circleBlack {
   border-radius: 50%;
   border: solid 8px black;
   margin: 20px;
-}
-
-#dashContent form {
-  width: 50%;
-  margin: auto;
 }
 
 input, textarea {
@@ -393,12 +363,6 @@ input[type="submit"] {
 
 input[name="mail"] {
   display: none;
-}
-
-#dashContent  form p {
-  text-align: left;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 a {
@@ -515,7 +479,74 @@ body .contentBack .tableClass.tableCV tr td {
   border-radius: 0;
 }
 
-.pagination {
+.tile-wrapper {
+  padding: 30px 0 0 0;
+}
+
+.tile, .tile-wrapper {
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+}
+
+.tile {
+  width: 100%;
+  padding: 30px 20%;
+  display: flex;
+  background-color: #FFF;
+  background-size: cover;
+  color: #10171F;
+  min-height: 340px;
+  
+  >div {
+    width: 50%;
+    flex-grow: 1;
+    position: relative;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+}
+
+.dark-tile {
+  color: #FFF;
+  
+  h2, p {
+    color: inherit;
+    text-shadow: 1px 1px #10171F;
+  }
+}
+
+.black-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: solid 1px #02C7F7;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.padding-lr-20 {
+  padding: 0 20px;
+}
+
+/* Image backgrounds */
+.vancouver {
+  background-image: url("/assets/images/vancouver.jpg");
+  background-position: bottom;
+}
+
+.capilano {
+  background-image: url("/assets/images/capilano-bridge.jpg");
+  background-position: bottom;
+}
+
+.center {
   text-align: center;
 }
 
@@ -539,10 +570,6 @@ body .contentBack .tableClass.tableCV tr td {
   .circularBlock {
     height: 5em;
     width: 5em;
-  }
-  
-  #dashContent form {
-    width: 100%;
   }
   
   .quisuisje {
@@ -647,19 +674,7 @@ body .contentBack .tableClass.tableCV tr td {
   .hidden {
     display: none;
   }
-  
-  #dashContent {
-    flex-direction: column;
-  }
-  
-  #dashContent.dashAccueil {
-    width: 100%;
-  }
-  
-  #dashContent>a:active {
-    background-color: #02C7F7;
-  }
-  
+
   #dashHashtag h2 {
     margin-bottom: 5px;
     padding-top: 15px;
@@ -695,18 +710,5 @@ body .contentBack .tableClass.tableCV tr td {
     margin-bottom: 5px;
     padding-top: 15px;
     font-size: 210%;
-  }
-}
-
-@media all and (min-device-height: 800px)
-{
-  #dash {
-    height: 600px;
-  }
-  
-  #dashContent {
-    margin: auto;
-    align-items: center;
-    height: 100%;
   }
 }
