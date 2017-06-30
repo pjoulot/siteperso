@@ -597,8 +597,16 @@ body .contentBack .tableClass.tableCV tr td {
   background-image: url("/assets/images/fox.jpg");
 }
 
+.atlantis {
+  background-image: url("/assets/images/atlantis.jpg");
+}
+
 .center {
   text-align: center;
+}
+
+.align-items-normal {
+  align-items: normal;
 }
 
 /* Overwrite pour mobiles*/
