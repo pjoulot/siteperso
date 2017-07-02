@@ -32,6 +32,10 @@ html  body{
   
 }
 
+iframe {
+  border: 0;
+}
+
 .page-content {
   margin-top: 62px;
 }
@@ -332,6 +336,16 @@ table {
   margin: auto;
 }
 
+.circularSmallBlock {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
 .floatLeft {
   float: left;
 }
@@ -458,7 +472,7 @@ nav a:hover {
 .post-meta {
   background-color: white;
   text-align: center;
-padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .post-content {
@@ -518,10 +532,31 @@ body .contentBack .tableClass.tableCV tr td {
   img {
     max-width: 100%;
   }
+
+  &.no-min-height {
+    min-height: 0;
+  }
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  &.tile-75 {
+    >div:first-child {
+      width: 25%;
+    }
+    >div:last-child {
+      width: 75%;
+    }
+  }
 }
 
 .tile.align-normal {
   align-items: normal;
+}
+
+.content-container {
+  padding: 30px 20%;
 }
 
 .dark-tile {
@@ -569,8 +604,35 @@ body .contentBack .tableClass.tableCV tr td {
   background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #02C7F7));
 }
 
+.timeline-element {
+  padding-left: 20px;
+  position: relative;
+  border-left: solid 4px #02C7F7;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: #FFF;
+    border: solid 4px #02C7F7;
+    border-radius: 50%;
+    position: absolute;
+    left: -11px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
 .padding-lr-20 {
   padding: 0 20px;
+}
+
+.height-240 {
+  height: 240px;
 }
 
 /* Image backgrounds */
@@ -603,6 +665,10 @@ body .contentBack .tableClass.tableCV tr td {
 
 .pencil {
   background-image: url("/assets/images/pencil.jpg");
+}
+
+.keyboard {
+  background-image: url("/assets/images/keyboard.jpg");
 }
 
 .center {
@@ -654,6 +720,10 @@ body .contentBack .tableClass.tableCV tr td {
         margin-bottom: 20px;
       }
     }
+  }
+
+  .content-container {
+    padding: 30px 5%;
   }
 
   footer {
