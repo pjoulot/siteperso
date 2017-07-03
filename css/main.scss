@@ -130,12 +130,6 @@ nav a, .language-switcher>* {
 nav li:first-child a {
   padding: 0.1em;
 }
-.logoWebsite {
-  background-image: url("/assets/design/philippejoulotlogo_small.png");
-  height: 3.4em;
-  width: 3.4em;
-  background-size: cover;
-}
 
 nav a:hover {
   color: white;
@@ -273,41 +267,18 @@ footer {
 }
 
 .followNetwork {
-  height: 3em;
-  width: 3em;
   border-radius: 50%;
   border: solid 2px #02C7F7;
   float: left;
   margin-right: 0.5em;
-  background-size: cover;
+  width: 52px;
+  height: 52px;
 }
 
 .followNetwork:hover {
   background-color: #02C7F7;
   cursor: pointer;
   transition: background 0.6s;
-}
-
-.github {
-  background-image: url("/assets/design/gitHub.png");
-}
-
-.linkedin {
-  background-image: url("/assets/design/linkedin.png");
-}
-
-.drupal {
-  background-image: url("/assets/design/drupal.png");
-}
-
-.npm {
-  background-image: url("/assets/design/npm.png");
-}
-
-.lineDesign {
-  background-color: #02C7F7;
-  width: 100%;
-  height: 10px;
 }
 
 .gras {
@@ -687,6 +658,44 @@ body .contentBack .tableClass.tableCV tr td {
   align-items: normal;
 }
 
+/* Sprites */
+
+/* General */
+.sprite-general {
+  background-image: url("/assets/design/general.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.drupal {
+background-position: -5px -5px;
+}
+
+.github {
+  background-position: -63px -5px;
+}
+
+.linkedin {
+ background-position: -5px -63px;
+}
+
+.npm {
+  background-position: -121px -5px;
+}
+
+.buttonMenu {
+  width: 55px;
+  height: 55px;
+  background-position: -63px -63px;
+}
+
+.logoWebsite {
+  width: 55px;
+  height: 55px;
+  background-position: -128px -63px;
+}
+
+
 /* Overwrite pour mobiles*/
 
 @media all and (max-device-width: 480px)
@@ -747,10 +756,6 @@ body .contentBack .tableClass.tableCV tr td {
   }
 
   .buttonMenu {
-    background-image: url("/assets/design/menu.png");
-    height: 3.4em;
-    width: 3.4em;
-    background-size: cover;
     float: right;
   }
   

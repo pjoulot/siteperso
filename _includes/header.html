@@ -1,11 +1,11 @@
 <nav>
   <div id="menuMobile">
     {% if site.base_lang == page.lang %}
-      <a href="{{ site.url }}"><div class="logoWebsite"></div></a>
+      <a href="{{ site.url }}"><div class="logoWebsite sprite-general"></div></a>
     {% else %}
-      <a href="{{ site.url }}/{{ page.lang }}"><div class="logoWebsite"></div></a>
+      <a href="{{ site.url }}/{{ page.lang }}"><div class="logoWebsite sprite-general"></div></a>
     {% endif %}
-    <div class="buttonMenu" onclick="menuShow();"></div>
+    <div class="buttonMenu sprite-general" onclick="menuShow();"></div>
   </div>
   
   <div  id="mainMenu" class="hidden-mobile">
@@ -36,9 +36,9 @@
 
     <ul>
       {% if site.base_lang == page.lang %}
-        <li class="hidden-mobile"><a href="{{ site.url }}"><div class="logoWebsite"></div></a></li>
+        <li class="hidden-mobile"><a href="{{ site.url }}"><div class="logoWebsite sprite-general"></div></a></li>
       {% else %}
-        <li class="hidden-mobile"><a href="{{ site.url }}/{{ page.lang }}"><div class="logoWebsite"></div></a></li>
+        <li class="hidden-mobile"><a href="{{ site.url }}/{{ page.lang }}"><div class="logoWebsite sprite-general"></div></a></li>
       {% endif %}
   
       {% assign pages=site.pages | where:"lang", page.lang %}
