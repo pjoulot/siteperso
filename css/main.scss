@@ -864,6 +864,22 @@ background-position: -5px -5px;
         margin-bottom: 20px;
       }
     }
+    
+    &.tile-75 {
+      > div:first-child {
+        width: 100%;
+      }
+
+      > div:last-child {
+        width: 100%;
+      }
+    }
+
+    .timeline-element:first-child {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   .content-container {
@@ -980,6 +996,14 @@ background-position: -5px -5px;
     width: 180px;
     bottom: -95px;
     margin-left: -100px;
+  }
+
+  .timeline-line-mobile {
+    padding-left: 20px;
+    position: relative;
+    border-left: solid 4px #02C7F7;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
