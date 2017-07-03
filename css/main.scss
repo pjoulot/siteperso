@@ -695,6 +695,133 @@ background-position: -5px -5px;
   background-position: -128px -63px;
 }
 
+/* Sprite for CV */
+
+.sprite-cv {
+  background-image: url("/assets/images/cv-sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.sprite-adoor {
+background-position: -5px -5px;
+}
+
+.sprite-aframe {
+ background-position: -165px -5px;
+}
+
+.sprite-amp {
+  background-position: -325px -5px;
+}
+
+.sprite-apache {
+  background-position: -485px -5px;
+}
+
+.sprite-b2g {
+  background-position: -645px -5px;
+}
+
+.sprite-coding2 {
+  background-position: -5px -165px;
+}
+
+.sprite-comicbook {
+  background-position: -165px -165px;
+}
+
+.sprite-css {
+  background-position: -325px -165px;
+}
+
+.sprite-d8 {
+  background-position: -485px -165px;
+}
+
+.sprite-french {
+  background-position: -645px -165px;
+}
+
+.sprite-git {
+  background-position: -5px -325px;
+}
+
+.sprite-gitlab {
+  background-position: -165px -325px;
+}
+
+.sprite-html {
+  background-position: -325px -325px;
+}
+
+.sprite-jekyll {
+  background-position: -485px -325px;
+}
+
+.sprite-jenkins {
+  background-position: -645px -325px;
+}
+
+.sprite-jquery {
+  background-position: -5px -485px;
+}
+
+.sprite-js {
+  background-position: -165px -485px;
+}
+
+.sprite-letsencrypt {
+  background-position: -325px -485px;
+}
+
+.sprite-lxc {
+  background-position: -485px -485px;
+}
+
+.sprite-mysql {
+  background-position: -645px -485px;
+}
+
+.sprite-nginx {
+  background-position: -5px -645px;
+}
+
+.sprite-patrick_currie {
+  background-position: -165px -645px;
+}
+
+.sprite-php {
+  background-position: -325px -645px;
+}
+
+.sprite-spanish {
+  background-position: -485px -645px;
+}
+
+.sprite-sport {
+  background-position: -645px -645px;
+}
+
+.sprite-tux {
+  background-position: -805px -5px;
+}
+
+.sprite-varnish {
+  background-position: -805px -165px;
+}
+
+.sprite-webassembly {
+  background-position: -805px -325px;
+}
+
+.sprite-windows {
+  background-position: -805px -485px;
+}
+
+
 
 /* Overwrite pour mobiles*/
 
