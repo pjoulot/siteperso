@@ -326,6 +326,7 @@ nav a:hover {
   width: 100%;
   padding: 30px 20%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #FFF;
   background-size: cover;
@@ -356,6 +357,14 @@ nav a:hover {
 
   &.no-padding {
     padding: 0;
+  }
+
+  &.no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  &.multiple-tile>div {
+    width: auto;
   }
 
   &.tile-75 {
@@ -446,6 +455,10 @@ nav a:hover {
 
 .padding-lr-20 {
   padding: 0 20px;
+}
+
+.padding-b-20 {
+  padding-bottom: 20px;
 }
 
 .height-240 {
@@ -659,15 +672,10 @@ background-position: -5px -5px;
   background-position: -805px -485px;
 }
 
-
-
 /* Overwrite pour mobiles*/
 
 @media all and (max-device-width: 480px)
 {
-  .hidden-mobile {
-    display: none;
-  }
 
   #descSite {
     padding: 0.5em;
@@ -687,22 +695,46 @@ background-position: -5px -5px;
     display: none;
   }
 
-  .first-tile {
-    margin-top: 75px;
-  }
-
-  .tile {
-    flex-direction: column;
-    padding: 30px 5%;
+  footer {
+    padding: 0 10%;
 
     > div {
       width: 100%;
-      
-      &:first-child {
-        margin-bottom: 20px;
-      }
     }
-    
+  }
+
+  #copyright {
+    padding: 0 10%;
+  }
+
+  #dashHashtag h2 {
+    margin-bottom: 5px;
+    padding-top: 15px;
+    font-size: 165%;
+  }
+
+  #dashHashtag p {
+    font-size: 110%;
+  }
+
+  #dashHashtag .photo {
+    height: 180px;
+    width: 180px;
+    bottom: -95px;
+    margin-left: -100px;
+  }
+}
+
+@media all and (max-device-width: 800px) {
+  .timeline-line-mobile {
+    padding-left: 20px;
+    position: relative;
+    border-left: solid 4px #02C7F7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .tile {
     &.tile-75 {
       > div:first-child {
         width: 100%;
@@ -719,23 +751,29 @@ background-position: -5px -5px;
       padding-bottom: 0;
     }
   }
+}
 
-  .content-container {
-    padding: 30px 5%;
+@media all and (max-device-width: 1000px) and (min-device-width: 481px)
+{
+  #dashHashtag p {
+    font-size: 140%;
   }
-
-  footer {
-    padding: 0 10%;
-
-    > div {
-      width: 100%;
-    }
+  
+  #dashHashtag .photo {
+    height: 200px;
+    width: 200px;
+    bottom: -105px;
+    margin-left: -110px;
   }
-
-  #copyright {
-    padding: 0 10%;
+  
+  #dashHashtag h2 {
+    margin-bottom: 5px;
+    padding-top: 15px;
+    font-size: 210%;
   }
+}
 
+@media all and (max-device-width: 900px) {
   .buttonMenu {
     float: right;
   }
@@ -819,48 +857,46 @@ background-position: -5px -5px;
     display: none;
   }
 
-  #dashHashtag h2 {
-    margin-bottom: 5px;
-    padding-top: 15px;
-    font-size: 165%;
+  .hidden-mobile {
+    display: none;
   }
 
-  #dashHashtag p {
-    font-size: 110%;
-  }
-
-  #dashHashtag .photo {
-    height: 180px;
-    width: 180px;
-    bottom: -95px;
-    margin-left: -100px;
-  }
-
-  .timeline-line-mobile {
-    padding-left: 20px;
-    position: relative;
-    border-left: solid 4px #02C7F7;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .page-content {
+    margin-top: 55px;
   }
 }
 
-@media all and (max-device-width: 800px) and (min-device-width: 481px)
-{
-  #dashHashtag p {
-    font-size: 140%;
+@media all and (max-device-width: 950px) {
+  .tile.first-tile {
+    text-align: center;
   }
-  
-  #dashHashtag .photo {
-    height: 200px;
-    width: 200px;
-    bottom: -105px;
-    margin-left: -110px;
+
+  .tile {
+    flex-direction: column;
+    padding: 30px 5%;
+
+    > div {
+      width: 100%;
+      
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
   }
-  
-  #dashHashtag h2 {
-    margin-bottom: 5px;
-    padding-top: 15px;
-    font-size: 210%;
+
+  .content-container {
+    padding: 30px 5%;
+  }
+}
+
+@media all and (max-device-width: 1100px) {
+  nav ul {
+    justify-content: left;
+  }
+}
+
+@media all and (max-device-width: 1300px) {
+  .tile.first-tile {
+    margin-top: 75px;
   }
 }
