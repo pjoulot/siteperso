@@ -19,6 +19,9 @@ email: your-email@domain.com
 description:
   en: Philippe Joulot, software/web developer
   fr: Philippe Joulot, développeur logiciel/web
+keywords:
+  en: Philippe Joulot, developer, web, drupal, php, mozilla, javascript, aframe
+  fr: Philippe Joulot, développeur, web, drupal, php, mozilla, javascript, aframe
 baseurl: "" # the subpath of your site, e.g. /blog
 basepath:
   en: "/en"
