@@ -1,0 +1,11 @@
+server {
+        listen 443 ssl;
+
+        server_name philippejoulot.fr www.philippejoulot.fr;
+        ssl_certificate /etc/letsencrypt/live/philippejoulot.fr/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/philippejoulot.fr/privkey.pem;
+
+        location / {
+          root /var/www/philippejoulot;
+        }
+}

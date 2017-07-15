@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 basepath:
   en: "/en"
   fr: ""
-url: "http://www.philippejoulot.fr" # the base hostname & protocol for your site
+url: "https://www.philippejoulot.fr" # the base hostname & protocol for your site
 twitter_username: stargayte
 github_username:  pjoulot
 
