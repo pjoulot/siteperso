@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 base_lang: fr
 title: "Philippe Joulot"
-email: your-email@domain.com
+email: philippe.joulot@laposte.net
 description:
   en: Philippe Joulot, software/web developer
   fr: Philippe Joulot, développeur logiciel/web
