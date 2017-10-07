@@ -19,6 +19,7 @@ server {
 
         location / {
           root /var/www/philippejoulot;
+          add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
         }
 
         location ~* \.(?:ico|css|js|gif|jpe?g|png|woff|woff2)$ {
