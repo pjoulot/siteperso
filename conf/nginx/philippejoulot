@@ -4,6 +4,13 @@ server {
         server_name philippejoulot.fr www.philippejoulot.fr;
         ssl_certificate /etc/letsencrypt/live/philippejoulot.fr/fullchain.pem;
         ssl_certificate_key /etc/letsencrypt/live/philippejoulot.fr/privkey.pem;
+        add_header Strict-Transport-Security "max-age=31536000; includeSubDomains";
+
+        add_header Content-Security-Policy "script-src 'strict-dynamic' 'nonce-rAnd0m123' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none';";
+        add_header Referrer-Policy "no-referrer";
+        add_header X-Frame-Options "SAMEORIGIN";
+        add_header X-Xss-Protection "1; mode=block";
+        add_header X-Content-Type-Options "nosniff";
 
         gzip on;
         gzip_disable "msie6";
@@ -19,7 +26,6 @@ server {
 
         location / {
           root /var/www/philippejoulot;
-          add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
         }
 
         location ~* \.(?:ico|css|js|gif|jpe?g|png|woff|woff2)$ {
