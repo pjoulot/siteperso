@@ -14,3 +14,9 @@ if ('serviceWorker' in navigator) {
     console.log('Registration failed with ' + error);
   });
 }
+
+document.querySelector('.js-menu').addEventListener('click', function() {
+  menuShow();
+});
+
+function menuShow(){var classNom=document.getElementById('mainMenu').className;if(classNom=='visible'){document.getElementById('mainMenu').className='hidden';}else{document.getElementById('mainMenu').className='visible';}}
