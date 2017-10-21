@@ -8,9 +8,16 @@
   <meta name="description" content="{% if page.description %}{{ page.description | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords[page.lang] }}{% endif %}">
 
+  <meta property="og:site_name" content="Philippe Joulot" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ page.title }}" />
+
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for page in pages %}
-    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
+  {% for pageitem in pages %}
+    {% if page.lang == pageitem.lang %}
+    <meta property="og:url" content="{{ pageitem.url }}" />
+    {% endif %}
+    <link rel="alternate" hreflang="{{ pageitem.lang }}" href="{{ pageitem.url }}" />
   {% endfor %}
 
   <link rel="stylesheet" href="{{base}}/css/main.css">
