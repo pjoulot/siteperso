@@ -133,6 +133,7 @@ nav li:first-child a {
 
 nav a:hover {
   color: white;
+  text-decoration: none;
 }
 
 nav .button-link-reverse {
@@ -296,10 +297,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-nav a:hover {
-  text-decoration: none;
 }
 
 .gras {
@@ -799,23 +796,20 @@ background-position: -5px -5px;
     
     a {
       display: inline;
+      padding: 0;
+      
+      &:active {
+        background-color: #02C7F7;
+      }
     }
   }
-  
+
   #menuMobile:after {
     content: "";
     display: table;
     clear: both;
   }
-  
-  #menuMobile a {
-    padding: 0;
-  }
-  
-  #menuMobile a:active {
-    background-color: #02C7F7;
-  }
-  
+
   #menuMobile .logoWebsite {
     position: absolute;
     float: left;
