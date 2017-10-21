@@ -4,13 +4,19 @@
   <meta name="viewport" content="width=device-width, user-scalable=yes" />
   <meta name="referrer" content="never">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  {% if page.title %}
+    {% assign pagetitle=page.title %}
+  {% else %}
+    {% assign pagetitle=site.title %}
+  {% endif %}
+  <title>{{ pagetitle | escape }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords[page.lang] }}{% endif %}">
 
   <meta property="og:site_name" content="Philippe Joulot" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:title" content="{{ pagetitle }}" />
+  <meta property="og:image" content="{{ site.url }}/assets/images/philippejoulotlogo_300.png" />
 
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
   {% for pageitem in pages %}
