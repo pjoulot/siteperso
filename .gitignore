@@ -3,5 +3,4 @@ _site/
 Gemfile.lock
 .project
 .settings
-scripts/env.sh
 releases

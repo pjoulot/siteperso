@@ -3,8 +3,8 @@
 BUILD_PATH="_site"
 
 if [ -d ".git" ]; then
-  jekyll build
-  
+  bundle exec jekyll build
+
   # Remove useless files
   rm -f "$BUILD_PATH/README.md"
   rm -Rf "$BUILD_PATH/scripts"

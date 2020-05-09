@@ -25,13 +25,13 @@ server {
         charset UTF-8;
 
         location / {
-          root /var/www/philippejoulot;
+          root /var/www/philippejoulot.fr;
         }
 
         location ~* \.(?:ico|css|js|gif|jpe?g|png|woff|woff2)$ {
           expires 30d;
           add_header Pragma public;
           add_header Cache-Control "public";
-          root /var/www/philippejoulot;
+          root /var/www/philippejoulot.fr;
        }
 }
