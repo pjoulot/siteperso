@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { MdDarkMode, MdOutlineDarkMode } from 'react-icons/md';
+import { MdOutlineDarkMode } from 'react-icons/md';
+import { BsSun } from 'react-icons/bs';
 
 export default function DarkModeButton() {
   const { theme, setTheme } = useTheme();
@@ -21,9 +22,9 @@ export default function DarkModeButton() {
         {mounted && (
             <span>
             {theme === "dark" ? (
-                <MdOutlineDarkMode />
+                <BsSun />
             ) : (
-                <MdDarkMode />
+                <MdOutlineDarkMode />
             )}
             </span>
         )}

@@ -1,0 +1,118 @@
+@import "variables";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+
+@mixin max-width($width) {
+    max-width: $width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin flex-grid($column-number, $column-spacing, $row-spacing, $align-direction: flex-start, $border-size: 0) {
+    $calculated-column-spacing: ($column-spacing + $border-size);
+    $single-column-spacing: $calculated-column-spacing/2;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $align-direction;
+    margin-left: -1 * $single-column-spacing;
+    margin-right: -1 * $single-column-spacing;
+    margin-bottom: -$row-spacing;
+
+    $percentage: 100 / $column-number;
+    & > * {
+        flex: 0 0 calc(#{$percentage}% - #{$calculated-column-spacing});
+        margin-left: $single-column-spacing;
+        margin-right: $single-column-spacing;
+        margin-bottom: $row-spacing;
+
+        @if ($border-size != 0) {
+            & + * {
+                position: relative;
+
+                &:before {
+                    content: "";
+                    width: $border-size;
+                    height: 100%;
+                    background-color: $white;
+                    position: absolute;
+                    left: -1 * $single-column-spacing;
+                    top: 0;
+                }
+
+                &:nth-child(#{$column-number}n + 1) {
+                    &:before {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin visuallyHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@mixin resetButton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+@mixin container($fn-width: $large-width, $fn-gutter: $gutter) {
+    @include max-width($fn-width);
+    padding-left: $fn-gutter;
+    padding-right: $fn-gutter;
+}
+
+@mixin br-small {
+    @include breakpoint($small-screen) {
+        @content;
+    }
+}
+@mixin br-max-small {
+    @include breakpoint(max-width $small-screen - 1) {
+        @content;
+    }
+}
+@mixin br-medium {
+    @include breakpoint($medium-screen) {
+        @content;
+    }
+}
+@mixin br-max-medium {
+    @include breakpoint(max-width $medium-screen - 1) {
+        @content;
+    }
+}
+@mixin br-desktop {
+    @include breakpoint($desktop-screen) {
+        @content;
+    }
+}
+@mixin br-max-desktop {
+    @include breakpoint(max-width $desktop-screen - 1) {
+        @content;
+    }
+}
+@mixin br-custom($size) {
+    @include breakpoint(min-width $size) {
+        @content;
+    }
+}
+@mixin br-max-custom($size) {
+    @include breakpoint(max-width $size - 1) {
+        @content;
+    }
+}

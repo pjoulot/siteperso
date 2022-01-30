@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "breakpoint-sass": "^2.7.1",
     "next": "12.0.9",
     "next-themes": "0.0.15",
     "react": "17.0.2",
