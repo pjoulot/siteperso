@@ -3,8 +3,46 @@
 
 .footer {
     padding: 2rem 0;
-    
+    @include container();
+
     &__inner {
-        @include container();
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        border-top: solid 1px grey;
+        padding-top: 2rem;
+
+        @include br-max-custom($large-width) {
+            flex-direction: column;
+        }
+    }
+
+    &__socials {
+        font-size: 20px;
+        display: flex;
+
+        a {
+            display: block;
+            padding: 15px;
+            border-radius: 50%;
+            border: solid 1px grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 0;
+        }
+
+        a+a {
+            margin-left: 10px;
+        }
+
+        @include br-max-custom($large-width) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__copyright {
+        font-size: 14px;
     }
 }

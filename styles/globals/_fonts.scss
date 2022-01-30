@@ -1,0 +1,48 @@
+// Poppins
+@font-face {
+  font-family: $font-default;
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-default;
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-default;
+  src: url("../../fonts/Poppins/Poppins-Black.ttf") format("truetype");
+  font-weight: $font-weight-black;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-default;
+  src: url("../../fonts/Poppins/Poppins-Italic.ttf") format("truetype");
+  font-weight: $font-weight-regular;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-default;
+  src: url("../../fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: $font-weight-bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-default;
+  src: url("../../fonts/Poppins/Poppins-BlackItalic.ttf") format("truetype");
+  font-weight: $font-weight-black;
+  font-style: italic;
+  font-display: swap;
+}
