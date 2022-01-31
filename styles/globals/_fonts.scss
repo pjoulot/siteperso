@@ -1,6 +1,14 @@
 // Poppins
 @font-face {
   font-family: $font-default;
+  src: url("../../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-default;
   src: url("../../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
   font-weight: $font-weight-regular;
   font-style: normal;
@@ -20,6 +28,14 @@
   src: url("../../fonts/Poppins/Poppins-Black.ttf") format("truetype");
   font-weight: $font-weight-black;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-default;
+  src: url("../../fonts/Poppins/Poppins-LightItalic.ttf") format("truetype");
+  font-weight: $font-weight-light;
+  font-style: italic;
   font-display: swap;
 }
 

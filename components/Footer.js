@@ -8,7 +8,7 @@ import { BsTwitter } from 'react-icons/bs'
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
         <div className={styles.footer__inner}>
         <div className={styles.footer__socials}>
             <a href="https://github.com/pjoulot" rel="noopener noreferrer nofollow"  target="_blank" title="Github" aria-label="Github"><FaGithubAlt /></a>
@@ -19,6 +19,6 @@ export default function Footer() {
         </div>
         <div className={styles.footer__copyright}>© 2016 - 2022 Philippe Joulot. All rights reserved.</div>
         </div>
-    </div>
+    </footer>
   );
 }

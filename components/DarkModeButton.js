@@ -1,34 +1,24 @@
-import React, { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
+import React from "react";
+import { useTheme } from '@mui/material/styles';
 import { MdOutlineDarkMode } from 'react-icons/md';
 import { BsSun } from 'react-icons/bs';
+import IconButton from '@mui/material/IconButton';
+
+
+import { ColorModeContext } from "../pages/_app.js";
 
 export default function DarkModeButton() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+    const theme = useTheme();
+    const colorMode = React.useContext(ColorModeContext);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  return (
-    <div className="">
-        <button
-        aria-label="Toggle Dark Mode"
-        type="button"
-        className="w-10 h-10 p-3 rounded focus:outline-none"
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        >
-        {mounted && (
-            <span>
-            {theme === "dark" ? (
-                <BsSun />
-            ) : (
-                <MdOutlineDarkMode />
-            )}
-            </span>
-        )}
-        </button>
-    </div>
-  );
+    return (
+        <div className="">
+            <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
+                {theme.palette.mode === 'dark' ? <BsSun /> : <MdOutlineDarkMode />}
+            </IconButton>
+            {/* <IconButton sx={{ ml: 1 }} onClick={() => setMode(mode === "light" ? "dark" : "light")} color="inherit">
+                {theme.palette.mode === 'dark' ? <BsSun /> : <MdOutlineDarkMode />}
+            </IconButton> */}
+        </div>
+    );
 }
