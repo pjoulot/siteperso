@@ -3,8 +3,6 @@ import { useTheme } from '@mui/material/styles';
 import { MdOutlineDarkMode } from 'react-icons/md';
 import { BsSun } from 'react-icons/bs';
 import IconButton from '@mui/material/IconButton';
-
-
 import { ColorModeContext } from "../pages/_app.js";
 
 export default function DarkModeButton() {
@@ -12,13 +10,8 @@ export default function DarkModeButton() {
     const colorMode = React.useContext(ColorModeContext);
 
     return (
-        <div className="">
-            <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-                {theme.palette.mode === 'dark' ? <BsSun /> : <MdOutlineDarkMode />}
-            </IconButton>
-            {/* <IconButton sx={{ ml: 1 }} onClick={() => setMode(mode === "light" ? "dark" : "light")} color="inherit">
-                {theme.palette.mode === 'dark' ? <BsSun /> : <MdOutlineDarkMode />}
-            </IconButton> */}
-        </div>
+        <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
+            {theme.palette.mode === 'dark' ? <BsSun /> : <MdOutlineDarkMode />}
+        </IconButton>
     );
 }

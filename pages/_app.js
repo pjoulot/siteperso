@@ -27,6 +27,25 @@ export default function MyApp({ Component, pageProps }) {
     [mode],
   );
 
+  // React.useEffect(() => {
+  //   console.log('passed');
+  //   localStorage.setItem("preferred-theme", mode);
+  // }, [mode]);
+
+  React.useEffect(() => {
+    const savedTheme = typeof window !== 'undefined' ? localStorage.getItem('preferred-theme') : null;
+    console.log(savedTheme);
+    if (savedTheme !== null) {
+      const defaultThemeValue = (savedTheme !== null) ? savedTheme : 'light';
+      localStorage.setItem("preferred-theme", defaultThemeValue);
+      setMode(defaultThemeValue);
+    }
+    else {
+      localStorage.setItem("preferred-theme", 'light');
+      setMode('light');
+    }
+  }, []);
+
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>

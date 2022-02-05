@@ -2,6 +2,7 @@ import React from "react";
 import styles from '../styles/header.module.scss';
 import Link from 'next/link';
 import DarkModeButton from '../components/DarkModeButton';
+import Button from '@mui/material/Button';
 
 export default function Header() {
   return (
@@ -26,7 +27,10 @@ export default function Header() {
                 </Link>
             </div>
             <div className={styles.header__actions}>
-            <DarkModeButton></DarkModeButton>
+                <DarkModeButton></DarkModeButton>
+                <Link href="/about" passHref>
+                    <Button variant="contained" color="primary">Contact</Button>
+                </Link>
             </div>
         </div>
     </div>
