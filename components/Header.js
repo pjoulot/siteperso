@@ -145,9 +145,12 @@ export default function Header() {
           >
             <Flex align="flex-start">
               <Link href="/">
-                <HStack>
-                  <FaMoon />
-                </HStack>
+                <Box>
+                  Philippe Joulot
+                </Box>
+                <Box>
+                  Full Stack Developer
+                </Box>
               </Link>
             </Flex>
             <Flex>
@@ -173,6 +176,17 @@ export default function Header() {
                   _focus={{ boxShadow: "none" }}
                 >
                   CV
+                </Button>
+                <Button
+                  bg={bg}
+                  color="gray.500"
+                  display="inline-flex"
+                  alignItems="center"
+                  fontSize="md"
+                  _hover={{ color: cl }}
+                  _focus={{ boxShadow: "none" }}
+                >
+                  Projects
                 </Button>
                 <Button
                   bg={bg}
