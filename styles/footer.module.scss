@@ -2,9 +2,6 @@
 @import "mixins";
 
 .footer {
-    padding: 2rem 0;
-    @include container();
-
     &__inner {
         display: flex;
         flex-direction: row-reverse;

@@ -1,24 +1,78 @@
 import React from "react";
-import styles from '../styles/footer.module.scss';
-import { SiDrupal } from 'react-icons/si'
-import { CgNpm } from 'react-icons/cg'
-import { FaGithubAlt, FaNpm, FaLinkedinIn } from 'react-icons/fa'
-import { BsTwitter } from 'react-icons/bs'
+import {
+  Box,
+  chakra,
+  Container,
+  Stack,
+  Text,
+  useColorModeValue,
+  VisuallyHidden,
+} from '@chakra-ui/react';
+import { FaGithubAlt, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { SiDrupal } from 'react-icons/si';
+import { CgNpm } from 'react-icons/cg';
 
+
+const SocialButton = ({
+  children,
+  label,
+  href,
+}) => {
+  return (
+    <chakra.button
+      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      rounded={'full'}
+      w={8}
+      h={8}
+      cursor={'pointer'}
+      as={'a'}
+      href={href}
+      display={'inline-flex'}
+      alignItems={'center'}
+      justifyContent={'center'}
+      transition={'background 0.3s ease'}
+      _hover={{
+        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+      }}>
+      <VisuallyHidden>{label}</VisuallyHidden>
+      {children}
+    </chakra.button>
+  );
+};
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-        <div className={styles.footer__inner}>
-        <div className={styles.footer__socials}>
-            <a href="https://github.com/pjoulot" rel="noopener noreferrer nofollow"  target="_blank" title="Github" aria-label="Github"><FaGithubAlt /></a>
-            <a href="http://fr.linkedin.com/pub/philippe-joulot/89/490/b7a" rel="noopener noreferrer nofollow"  target="_blank" title="LinkedIn" aria-label="LinkedIn"><FaLinkedinIn /></a>
-            <a href="https://twitter.com/Stargayte" rel="noopener noreferrer nofollow"  target="_blank" title="Twitter" aria-label="Twitter"><BsTwitter /></a>
-            <a href="https://www.drupal.org/u/phjou" rel="noopener noreferrer nofollow"  target="_blank" title="Drupal" aria-label="Drupal"><SiDrupal /></a>
-            <a href="https://www.npmjs.com/~stargayte" rel="noopener noreferrer nofollow"  target="_blank" title="Npm" aria-label="Npm"><CgNpm /></a>
-        </div>
-        <div className={styles.footer__copyright}>© 2016 - 2022 Philippe Joulot. All rights reserved.</div>
-        </div>
-    </footer>
+    <Box
+      borderTop="1px solid"
+      borderTopColor="gray.200"
+      color={useColorModeValue('gray.700', 'gray.200')}>
+      <Container
+        as={Stack}
+        maxW={'7xl'}
+        py={12}
+        direction={{ base: 'column', md: 'row' }}
+        spacing={4}
+        justify={{ base: 'center', md: 'space-between' }}
+        align={{ base: 'center', md: 'center' }}>
+        <Text>© 2016 - 2022 Philippe Joulot. All rights reserved.</Text>
+        <Stack direction={'row'} spacing={6}>
+          <SocialButton label={'GitHub'} href={'https://github.com/pjoulot'}>
+            <FaGithubAlt />
+          </SocialButton>
+          <SocialButton label={'LinkedIn'} href={'http://fr.linkedin.com/pub/philippe-joulot/89/490/b7a'}>
+            <FaLinkedinIn />
+          </SocialButton>
+          <SocialButton label={'Twitter'} href={'https://twitter.com/Stargayte'}>
+            <FaTwitter />
+          </SocialButton>
+          <SocialButton label={'Drupal'} href={'https://www.drupal.org/u/phjou'}>
+            <SiDrupal />
+          </SocialButton>
+          <SocialButton label={'Npm'} href={'https://www.npmjs.com/~stargayte'}>
+            <CgNpm />
+          </SocialButton>
+        </Stack>
+      </Container>
+    </Box>
   );
 }
