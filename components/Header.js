@@ -216,7 +216,7 @@ export default function Header() {
                 icon={<SwitchIcon />}
               />
               <HStack spacing="5" display={{ base: "none", md: "flex" }}>
-                <Button colorScheme="brand" variant="solid" size="md">
+                <Button colorScheme="brand" variant="solid" size="sm">
                   Contact
                 </Button>
               </HStack>
@@ -224,6 +224,7 @@ export default function Header() {
                 display={{ base: "flex", md: "none" }}
                 aria-label="Open menu"
                 fontSize="20px"
+                px="1.65rem"
                 color={useColorModeValue("gray.800", "inherit")}
                 variant="ghost"
                 icon={<AiOutlineMenu />}

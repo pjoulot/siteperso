@@ -1,16 +1,22 @@
 export default {
     baseStyle: {
         borderRadius: "full",
+        fontWeight: "medium",
     },
-    sizes: {},
+    sizes: {
+        md: {
+            h: '3.3rem',
+        },
+        sm: {
+            h: '2.5rem',
+        }
+    },
     variants: {
         solid: {
-            pl: 6,
-            pr: 6,
+            px: 7,
         },
         outline: {
-            pl: 6,
-            pr: 6,
+            px: 7,
         }
     },
     defaultProps: {},
