@@ -70,7 +70,8 @@ import {
                 size={'lg'}
                 fontWeight={'normal'}
                 px={6}
-                leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
+                colorScheme={'orange'}
+                leftIcon={<PlayIcon h={4} w={4} color={'white'} />}>
                 How It Works
               </Button>
             </Stack>

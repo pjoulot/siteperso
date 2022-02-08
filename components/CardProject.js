@@ -56,7 +56,7 @@ const CardProject = () => {
               <Button
                 w="auto"
                 variant="outline"
-                colorScheme="brand"
+                colorScheme="orange"
               >
                 See on NPM
               </Button>

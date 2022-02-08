@@ -104,7 +104,7 @@ export default function Header() {
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="full" variant="ghost"  leftIcon={<AiFillHome />}>
+      <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
         Dashboard
       </Button>
       <Button
@@ -155,17 +155,19 @@ export default function Header() {
             </Flex>
             <Flex>
               <HStack spacing="5" display={{ base: "none", md: "flex" }}>
-                <Button
-                  bg={bg}
-                  color="gray.500"
-                  display="inline-flex"
-                  alignItems="center"
-                  fontSize="md"
-                  _hover={{ color: cl }}
-                  _focus={{ boxShadow: "none" }}
-                >
-                  About me
-                </Button>
+                <Link href="/">
+                  <Button
+                    bg={bg}
+                    color="gray.500"
+                    display="inline-flex"
+                    alignItems="center"
+                    fontSize="md"
+                    _hover={{ color: cl }}
+                    _focus={{ boxShadow: "none" }}
+                  >
+                    About me
+                  </Button>
+                </Link>
                 <Button
                   bg={bg}
                   color="gray.500"
@@ -209,12 +211,12 @@ export default function Header() {
                 aria-label={`Switch to ${text} mode`}
                 variant="ghost"
                 color="current"
-                ml={{ base: "0", md: "3" }}
+                mr={{ base: "0", md: "3" }}
                 onClick={toggleMode}
                 icon={<SwitchIcon />}
               />
               <HStack spacing="5" display={{ base: "none", md: "flex" }}>
-                <Button colorScheme="brand" variant="solid" size="sm">
+                <Button colorScheme="brand" variant="solid" size="md">
                   Contact
                 </Button>
               </HStack>

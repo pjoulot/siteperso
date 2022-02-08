@@ -20,19 +20,22 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      border={'1px'}
+      borderColor={useColorModeValue('blackAlpha.200', 'whiteAlpha.200')}
+      fontSize='1.2em'
       rounded={'full'}
-      w={8}
-      h={8}
+      w={14}
+      h={14}
       cursor={'pointer'}
       as={'a'}
       href={href}
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
-      transition={'background 0.3s ease'}
+      transition={'background 0.3s ease, color 0.3s ease, border-color 0.3s ease'}
       _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+        borderColor: 'brand.500',
+        color: 'brand.500',
       }}>
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}

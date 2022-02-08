@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { SimpleGrid, Container, Flex, useColorModeValue } from "@chakra-ui/react";
 import PageContainer from '../components/PageContainer'
-import Hero from '../components/Hero'
 import HomeHero from '../components/HomeHero'
 import CardProject from '../components/CardProject'
 import SplitWithImage from '../components/SplitWithImage'
@@ -14,10 +13,13 @@ export default function Home() {
       title="Philippe Joulot - Developer, Web, Drupal"
       description="Philippe Joulot, software/web developer"
     >
-      <Hero />
       <HomeHero />
       <Features2Columns />
-      <SplitWithImage />
+      <SplitWithImage
+        pretitle={"7 years of experience"}
+        title={"Drupal expert"}
+        description={"After many years using Drupal, I had the chance to build website for the small businesses to the multinational companies dealing with various complexity. I am now part of the Drupal association and involved in the Drupal community by maintaining multiple contrib modules."}
+      />
       <Container maxW={'7xl'}>
         <SimpleGrid columns={1} spacingY='60px' justifyItems={'center'}>
           <CardProject />
