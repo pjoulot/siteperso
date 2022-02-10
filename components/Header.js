@@ -19,6 +19,7 @@ import {
   SimpleGrid,
   Stack,
   Spacer,
+  Text,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
 
@@ -31,7 +32,7 @@ export default function Header() {
   const { toggleColorMode: toggleMode } = useColorMode();
   const text = useColorModeValue("dark", "light");
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
-  const bg = useColorModeValue("white", "gray.800");
+  const bg = useColorModeValue("general.bgBody", "general.bgBodyDark");
   const ref = React.useRef();
   const [y, setY] = React.useState(0);
   const { height = 0 } = ref.current ? ref.current.getBoundingClientRect() : {};
@@ -134,6 +135,7 @@ export default function Header() {
         transition="box-shadow 0.2s"
         bg={bg}
         w="full"
+        py="4rem"
         overflowY="hidden"
       >
         <Container maxW={'7xl'} h={'4.5rem'}>
@@ -144,12 +146,26 @@ export default function Header() {
             justifyContent="space-between"
           >
             <Flex align="flex-start">
-              <Link href="/">
-                <Box>
-                  Philippe Joulot
-                </Box>
-                <Box>
-                  Full Stack Developer
+              <Link
+                href="/"
+                _hover={{ textDecoration: 'none' }}
+              >
+                <Box as="h1"
+                  mr={["2rem", null, "6rem"]}
+                >
+                  <Text
+                    fontWeight={600}
+                    fontSize={'1.1rem'}
+                    lineHeight={'1.5rem'}
+                  >
+                    Philippe Joulot
+                  </Text>
+                  <Text
+                    fontWeight={300}
+                    color="gray.500"
+                  >
+                    Full Stack Developer
+                  </Text>
                 </Box>
               </Link>
             </Flex>
@@ -211,7 +227,7 @@ export default function Header() {
                 aria-label={`Switch to ${text} mode`}
                 variant="ghost"
                 color="current"
-                mr={{ base: "0", md: "3" }}
+                mr={{ base: "0", md: "2rem" }}
                 onClick={toggleMode}
                 icon={<SwitchIcon />}
               />
