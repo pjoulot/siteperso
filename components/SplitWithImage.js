@@ -44,7 +44,7 @@ const SplitWithImage = (data) => {
                     textTransform="uppercase"
                     fontWeight="extrabold"
                 >
-                    {data.title}
+                    {data.pretitle}
                 </chakra.span>
                 <chakra.h2
                     mb={4}

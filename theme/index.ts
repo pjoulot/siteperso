@@ -1,14 +1,17 @@
 import { extendTheme } from '@chakra-ui/react';
+import global from './global';
 import colors from './colors';
 import typography from './typography';
 import Button from './components/button'
 
 const overrides = {
   ...typography,
+  styles: {
+    global,
+  },
   colors,
   components: {
     Button,
   },
 };
-console.log(overrides);
 export default extendTheme(overrides);
