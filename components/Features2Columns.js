@@ -9,6 +9,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Heading2 from "./headings/Heading2";
+import { SiDrupal } from 'react-icons/si';
 
 export default function Features2Columns() {
   const Feature = (props) => {
@@ -63,7 +64,7 @@ export default function Features2Columns() {
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h2
-              color={useColorModeValue("brand.500")}
+              color={useColorModeValue("orange.600")}
               fontWeight="semibold"
               textTransform="uppercase"
               letterSpacing="wide"

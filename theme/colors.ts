@@ -17,6 +17,9 @@ const colors = {
         800: '#460412',
         900: '#1e0004',
     },
+    orange: {
+        600: "#fba820",
+    }
 };
 
 export default colors;
