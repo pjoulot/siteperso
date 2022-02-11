@@ -3,6 +3,8 @@ import { Global } from '@emotion/react';
 const Fonts = () => (
   <Global
     styles={`
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,800;1,200;1,400;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
       /* latin */
       @font-face {
         font-family: 'Poppins';

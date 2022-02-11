@@ -1,7 +1,8 @@
 export default {
     baseStyle: {
         borderRadius: "full",
-        fontWeight: "medium",
+        fontWeight: "semibold",
+        fontFamily: "Quicksand",
     },
     sizes: {
         md: {

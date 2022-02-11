@@ -1,6 +1,6 @@
 const typography = {
     fonts: {
-        heading: 'Poppins',
+        heading: 'Quicksand',
         body: 'Poppins',
     },
 };

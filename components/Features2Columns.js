@@ -6,6 +6,7 @@ import {
   useColorModeValue,
   Icon,
   Stack,
+  Heading,
 } from "@chakra-ui/react";
 
 export default function Features2Columns() {
@@ -68,7 +69,8 @@ export default function Features2Columns() {
             >
               About me
             </chakra.h2>
-            <chakra.p
+            <Heading
+              as="p"
               mt={2}
               fontSize={{ base: "3xl", sm: "4xl" }}
               lineHeight="8"
@@ -77,7 +79,7 @@ export default function Features2Columns() {
               color={useColorModeValue("gray.900")}
             >
               Developer
-            </chakra.p>
+            </Heading>
             <chakra.p
               mt={4}
               maxW="2xl"

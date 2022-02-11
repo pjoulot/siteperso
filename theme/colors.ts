@@ -2,6 +2,7 @@ const colors = {
     general: {
         bgBody: 'rgb(249, 250, 255)',
         bgBodyDark: '#1A202C',
+        color: 'rgb(8, 3, 55)',
     },
     brand: {
         50: '#ffe5eb',

@@ -13,6 +13,7 @@ import {
   IconProps,
   useColorModeValue,
 } from '@chakra-ui/react';
+import Heading1 from "./headings/Heading1";
 
 export default function HomeHero() {
   return (
@@ -23,10 +24,7 @@ export default function HomeHero() {
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}>
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading
-            lineHeight={1.1}
-            fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+          <Heading1>
             <Text
               as={'span'}
               position={'relative'}
@@ -46,7 +44,7 @@ export default function HomeHero() {
             <Text as={'span'} color={'red.400'}>
               use everywhere!
             </Text>
-          </Heading>
+          </Heading1>
           <Text color={'gray.500'}>
             Snippy is a rich coding snippets app that lets you create your own
             code snippets, categorize them, and even sync them in the cloud so

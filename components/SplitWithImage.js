@@ -9,7 +9,9 @@ import {
     SimpleGrid,
     Icon,
     Image,
+    Heading,
 } from "@chakra-ui/react";
+import Heading1 from "./headings/Heading1";
 
 import { FiExternalLink } from "react-icons/fi";
 import { SiDrupal } from 'react-icons/si';
@@ -46,16 +48,12 @@ const SplitWithImage = (data) => {
                 >
                     {data.pretitle}
                 </chakra.span>
-                <chakra.h2
+                <Heading1
+                    as="h2"
                     mb={4}
-                    fontSize={{ base: "4xl", md: "4xl", lg: "5xl" }}
-                    fontWeight="bold"
-                    color={useColorModeValue("gray.800", "white")}
-                    lineHeight="shorter"
-                    textShadow="2px 0 currentcolor"
                 >
                     {data.title}
-                </chakra.h2>
+                </Heading1>
                 <chakra.p
                     pr={{ base: 0, lg: 16 }}
                     mb={4}
