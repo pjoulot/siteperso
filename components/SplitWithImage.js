@@ -36,6 +36,7 @@ const SplitWithImage = (data) => {
                 direction="column"
                 alignItems="start"
                 justifyContent="center"
+                bg={useColorModeValue("white", null)}
                 px={{ base: 4, md: 8, lg: 20 }}
                 py={24}
                 zIndex={3}

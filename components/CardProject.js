@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
+import Heading3 from "./headings/Heading3";
 
 const CardProject = () => {
   return (
@@ -24,13 +25,13 @@ const CardProject = () => {
       </Box>
 
       <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
-        <chakra.h2
+        <Heading3
           fontSize={{ base: "2xl", md: "3xl" }}
           color={useColorModeValue("gray.800", "white")}
           fontWeight="bold"
         >
           A-Door
-        </chakra.h2>
+        </Heading3>
         <chakra.p mt={4} color={useColorModeValue("gray.600", "gray.400")}>
           A-Door is a library for the framework A-frame in order to easily generate sliding doors in virtual reality. The package has lots of cool feature such as animation, sounds, vocal commands, proximity detection...
         </chakra.p>

@@ -27,6 +27,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { AiFillHome, AiOutlineInbox, AiOutlineMenu } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
+import MenuLink from "./links/MenuLink";
 
 export default function Header() {
   const { toggleColorMode: toggleMode } = useColorMode();
@@ -171,52 +172,18 @@ export default function Header() {
             </Flex>
             <Flex>
               <HStack spacing="5" display={{ base: "none", md: "flex" }}>
-                <Link href="/">
-                  <Button
-                    bg={bg}
-                    color="gray.500"
-                    display="inline-flex"
-                    alignItems="center"
-                    fontSize="md"
-                    _hover={{ color: cl }}
-                    _focus={{ boxShadow: "none" }}
-                  >
-                    About me
-                  </Button>
-                </Link>
-                <Button
-                  bg={bg}
-                  color="gray.500"
-                  display="inline-flex"
-                  alignItems="center"
-                  fontSize="md"
-                  _hover={{ color: cl }}
-                  _focus={{ boxShadow: "none" }}
-                >
+                <MenuLink href="/">
+                  About me
+                </MenuLink>
+                <MenuLink href="/">
                   CV
-                </Button>
-                <Button
-                  bg={bg}
-                  color="gray.500"
-                  display="inline-flex"
-                  alignItems="center"
-                  fontSize="md"
-                  _hover={{ color: cl }}
-                  _focus={{ boxShadow: "none" }}
-                >
+                </MenuLink>
+                <MenuLink href="/">
                   Projects
-                </Button>
-                <Button
-                  bg={bg}
-                  color="gray.500"
-                  display="inline-flex"
-                  alignItems="center"
-                  fontSize="md"
-                  _hover={{ color: cl }}
-                  _focus={{ boxShadow: "none" }}
-                >
+                </MenuLink>
+                <MenuLink href="/">
                   Blog
-                </Button>
+                </MenuLink>
               </HStack>
             </Flex>
             <Spacer />

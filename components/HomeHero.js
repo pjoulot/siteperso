@@ -14,6 +14,8 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import Heading1 from "./headings/Heading1";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import colors from '../theme/colors';
 
 export default function HomeHero() {
   return (
@@ -24,24 +26,14 @@ export default function HomeHero() {
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}>
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading1>
-            <Text
-              as={'span'}
-              position={'relative'}
-              _after={{
-                content: "''",
-                width: 'full',
-                height: '30%',
-                position: 'absolute',
-                bottom: 1,
-                left: 0,
-                bg: 'red.400',
-                zIndex: -1,
-              }}>
+          <Heading1
+            lineHeight={1.3}
+          >
+            <RoughNotation type="underline" show={true} color={colors['brand']['500']} iterations={2} strokeWidth={10}>
               Write once,
-            </Text>
+            </RoughNotation>
             <br />
-            <Text as={'span'} color={'red.400'}>
+            <Text as={'span'} color={'brand.500'}>
               use everywhere!
             </Text>
           </Heading1>
@@ -56,13 +48,13 @@ export default function HomeHero() {
             <Button
               variant={"solid"}
               colorScheme={"brand"}>
-              Get started
+              Discover my projects
             </Button>
             <Button
               variant={"outline"}
               colorScheme={"orange"}
               leftIcon={<PlayIcon h={4} w={4} color={'orange'} />}>
-              How It Works
+              Work with me
             </Button>
           </Stack>
         </Stack>

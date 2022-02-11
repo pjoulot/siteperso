@@ -8,6 +8,7 @@ import {
   Stack,
   Heading,
 } from "@chakra-ui/react";
+import Heading2 from "./headings/Heading2";
 
 export default function Features2Columns() {
   const Feature = (props) => {
@@ -58,7 +59,7 @@ export default function Features2Columns() {
       justifyContent="center"
       alignItems="center"
     >
-      <Box py={12} bg={useColorModeValue("white", "gray.800")} rounded="xl">
+      <Box py={12} shadow={{ base: "base" }} bg={useColorModeValue("white", "gray.800")} rounded="xl">
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h2
@@ -69,17 +70,11 @@ export default function Features2Columns() {
             >
               About me
             </chakra.h2>
-            <Heading
+            <Heading2
               as="p"
-              mt={2}
-              fontSize={{ base: "3xl", sm: "4xl" }}
-              lineHeight="8"
-              fontWeight="extrabold"
-              letterSpacing="tight"
-              color={useColorModeValue("gray.900")}
             >
               Developer
-            </Heading>
+            </Heading2>
             <chakra.p
               mt={4}
               maxW="2xl"

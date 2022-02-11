@@ -6,8 +6,8 @@ const Heading3 = (props) => {
     <Heading
         as={props.as || "h3"}
         {...props}
-        lineHeight={1.1}
-        fontWeight={700}
+        lineHeight={props.lineHeight || 1.1}
+        fontWeight={props.fontWeight || 700}
         fontSize={{ base: '1xl', sm: '2xl', lg: '3xl' }}>
             {props.children}
     </Heading>
