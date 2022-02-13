@@ -30,17 +30,15 @@ export default function HomeHero() {
             lineHeight={1.3}
           >
             <RoughNotation type="underline" show={true} color={colors['brand']['500']} iterations={2} strokeWidth={10}>
-              Write once,
+              Coding,
             </RoughNotation>
             <br />
             <Text as={'span'} color={'brand.500'}>
-              use everywhere!
+              is in my DNA!
             </Text>
           </Heading1>
           <Text color={'gray.500'}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+            Developping software has been a hobbie since high school, now it is also my job. I am very lucky to be able to do what I love for a living, so if you're looking for a passionate developer, you are at the right place!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}

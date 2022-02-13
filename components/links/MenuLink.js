@@ -22,7 +22,7 @@ const MenuLink = (props) => {
                 alignItems="center"
                 fontSize="md"
                 _hover={{ color: "brand.500", '--d': '100%' }}
-                _focus={{ boxShadow: "none" }}
+                _focus={{ boxShadow: "none", color: "brand.500", '--d': '100%' }}
             >
                 { props.children }
             </Button>

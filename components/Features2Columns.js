@@ -6,7 +6,7 @@ import {
   useColorModeValue,
   Icon,
   Stack,
-  Heading,
+  Button,
 } from "@chakra-ui/react";
 import Heading2 from "./headings/Heading2";
 import { SiDrupal } from 'react-icons/si';
@@ -22,8 +22,8 @@ export default function Features2Columns() {
             h={12}
             w={12}
             rounded="md"
-            bg={useColorModeValue("brand.500")}
-            color="white"
+            bg={useColorModeValue("brand.500", "gray.700")}
+            color={"white"}
           >
             <Icon
               boxSize={6}
@@ -64,7 +64,7 @@ export default function Features2Columns() {
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h2
-              color={useColorModeValue("orange.600")}
+              color={useColorModeValue("orange.600", "orange.600")}
               fontWeight="semibold"
               textTransform="uppercase"
               letterSpacing="wide"
@@ -113,7 +113,7 @@ export default function Features2Columns() {
               <Feature
                 title=" Web technologies"
                 icon={
-                    <path
+                  <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"

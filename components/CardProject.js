@@ -25,15 +25,11 @@ const CardProject = () => {
       </Box>
 
       <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
-        <Heading3
-          fontSize={{ base: "2xl", md: "3xl" }}
-          color={useColorModeValue("gray.800", "white")}
-          fontWeight="bold"
-        >
+        <Heading3>
           A-Door
         </Heading3>
         <chakra.p mt={4} color={useColorModeValue("gray.600", "gray.400")}>
-          A-Door is a library for the framework A-frame in order to easily generate sliding doors in virtual reality. The package has lots of cool feature such as animation, sounds, vocal commands, proximity detection...
+          A-Door is a library for the framework A-frame in order to generate sliding doors in virtual reality with only one HTML tag! The package has lots of cool feature such as animation, sounds, vocal commands, proximity detection...
         </chakra.p>
 
         <Box mt={8}>
