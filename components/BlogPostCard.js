@@ -16,7 +16,7 @@ const BlogPostCard = () => {
             mx="auto"
             rounded="lg"
             shadow="md"
-            bg={useColorModeValue("white", "gray.800")}
+            bg={useColorModeValue("white", "gray.700")}
             maxW="2xl"
         >
             <Image

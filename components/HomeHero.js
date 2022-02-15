@@ -10,14 +10,22 @@ import {
   Icon,
   IconButton,
   createIcon,
-  IconProps,
+  PseudoBox,
   useColorModeValue,
+  keyframes,
 } from '@chakra-ui/react';
 import Heading1 from "./headings/Heading1";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import colors from '../theme/colors';
 
+const swing = keyframes`
+  from {transform: rotate(3deg);}
+  to {transform: rotate(-3deg)}
+`;
+
 export default function HomeHero() {
+  const swingAnimation = `${swing} ease-in-out 2s infinite alternate`;
+
   return (
     <Container maxW={'7xl'}>
       <Stack
@@ -60,6 +68,7 @@ export default function HomeHero() {
           flex={1}
           justify={'center'}
           align={'center'}
+          flexDirection={'column'}
           position={'relative'}
           w={'full'}>
           <Blob
@@ -69,27 +78,15 @@ export default function HomeHero() {
             top={'-20%'}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('red.50', 'red.400')}
+            color={useColorModeValue('brand.100', 'orange.400')}
           />
           <Box
             position={'relative'}
-            height={'300px'}
+            height={'400px'}
             rounded={'2xl'}
             boxShadow={'2xl'}
-            width={'full'}
+            width={'70%'}
             overflow={'hidden'}>
-            <IconButton
-              aria-label={'Play Button'}
-              variant={'ghost'}
-              _hover={{ bg: 'transparent' }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={'lg'}
-              color={'white'}
-              position={'absolute'}
-              left={'50%'}
-              top={'50%'}
-              transform={'translateX(-50%) translateY(-50%)'}
-            />
             <Image
               alt={'Hero Image'}
               fit={'cover'}
@@ -97,9 +94,47 @@ export default function HomeHero() {
               w={'100%'}
               h={'100%'}
               src={
-                'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+                'https://hips.hearstapps.com/esq.h-cdn.co/assets/17/11/4000x2250/hd-aspect-1489514996-esq040117chrisevans002.jpg?resize=2048:*'
               }
             />
+          </Box>
+          <Box mt={'2em'}>
+            <Box
+              py={"1em"}
+              px={"2em"}
+              bg={'brand.200'}
+              animation={swingAnimation}
+              transformOrigin={'center -20px'}
+              position={'relative'}
+              zIndex={2}
+              _after={{
+                content: `""`,
+                bg: "black",
+                width: '1px',
+                height: '3em',
+                top: '-2.5em',
+                left: '1.5em',
+                position: 'absolute',
+                transform: 'rotate(30deg)',
+                zIndex: '1',
+              }}
+              _before={{
+                content: `""`,
+                bg: "black",
+                width: '1px',
+                height: '3em',
+                top: '-2.5em',
+                right: '1.5em',
+                position: 'absolute',
+                transform: 'rotate(-30deg)',
+                zIndex: '1',
+              }}
+            >
+              <Text fontSize={"2em"} fontFamily={"Quicksand"} fontWeight={"bold"}>It's me</Text>
+            </Box>
+            {/* <RoughNotation type="highlight" show={true} color={colors['brand']['200']} animate={false} strokeWidth={5}>
+              <Text fontSize={"2em"} fontFamily={"Quicksand"} fontWeight={"bold"}>I am Philippe</Text>
+            </RoughNotation> */}
           </Box>
         </Flex>
       </Stack>

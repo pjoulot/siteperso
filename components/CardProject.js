@@ -9,7 +9,7 @@ const CardProject = () => {
       mx={{ lg: 8 }}
       display={{ lg: "flex" }}
       maxW={{ lg: "5xl" }}
-      shadow={{ base: "base" }}
+      shadow={{ base: "orange" }}
       rounded={{ lg: "lg" }}
     >
       <Box w={{ lg: "50%" }}>

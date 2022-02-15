@@ -54,13 +54,13 @@ export default function Features2Columns() {
   };
   return (
     <Flex
-      bg={useColorModeValue("#F9FAFB", "gray.600")}
+      bg={useColorModeValue("orange.200", "gray.600")}
       p={[5, 5, 20]}
       w="auto"
       justifyContent="center"
       alignItems="center"
     >
-      <Box py={12} shadow={{ base: "base" }} bg={useColorModeValue("white", "gray.800")} rounded="xl">
+      <Box py={12} shadow={{ base: "orange" }} bg={useColorModeValue("white", "gray.800")} rounded="xl">
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h2

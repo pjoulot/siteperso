@@ -2,11 +2,11 @@ const colors = {
     general: {
         bgBody: 'rgb(249, 250, 255)',
         bgBodyDark: '#1A202C',
-        color: 'rgb(8, 3, 55)',
+        color: '#2c2c51',
     },
     brand: {
         50: '#ffe5eb',
-        100: '#fbbac5',
+        100: '#ffecee',
         200: '#f28ea0',
         300: '#eb617a',
         400: '#e43554',
@@ -19,7 +19,8 @@ const colors = {
     },
     orange: {
         600: "#fba820",
-    }
+        200: "#fdfaf6"
+    },
 };
 
 export default colors;
