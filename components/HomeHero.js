@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   keyframes,
 } from '@chakra-ui/react';
+import ImageNext from './ImageNext';
 import Heading1 from "./headings/Heading1";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import colors from '../theme/colors';
@@ -46,7 +47,7 @@ export default function HomeHero() {
             </Text>
           </Heading1>
           <Text color={'gray.500'}>
-            Developping software has been a hobbie since high school, now it is also my job. I am very lucky to be able to do what I love for a living, so if you're looking for a passionate developer, you are at the right place!
+            Developping software has been a hobbie since high school, now it is also my job. I am very lucky to be able to do what I love for a living, so if you&apos;re looking for a passionate developer, you are at the right place!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -87,7 +88,7 @@ export default function HomeHero() {
             boxShadow={'2xl'}
             width={'70%'}
             overflow={'hidden'}>
-            <Image
+            <ImageNext
               alt={'Hero Image'}
               fit={'cover'}
               align={'center'}
@@ -130,7 +131,7 @@ export default function HomeHero() {
                 zIndex: '1',
               }}
             >
-              <Text fontSize={"2em"} fontFamily={"Quicksand"} fontWeight={"bold"}>It's me</Text>
+              <Text fontSize={"2em"} fontFamily={"Quicksand"} fontWeight={"bold"}>It&apos;s me</Text>
             </Box>
             {/* <RoughNotation type="highlight" show={true} color={colors['brand']['200']} animate={false} strokeWidth={5}>
               <Text fontSize={"2em"} fontFamily={"Quicksand"} fontWeight={"bold"}>I am Philippe</Text>

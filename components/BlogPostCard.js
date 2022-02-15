@@ -7,6 +7,7 @@ import {
     useColorModeValue,
     Link,
 } from "@chakra-ui/react";
+import ImageNext from './ImageNext';
 import Heading3 from "./headings/Heading3";
 
 const BlogPostCard = () => {
@@ -19,14 +20,16 @@ const BlogPostCard = () => {
             bg={useColorModeValue("white", "gray.700")}
             maxW="2xl"
         >
-            <Image
-                roundedTop="lg"
-                w="full"
-                h={64}
-                fit="cover"
-                src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                alt="Article"
-            />
+            <Box position="relative" h={64} w="full">
+                <ImageNext
+                    roundedTop="lg"
+                    w="full"
+                    h={64}
+                    fit="cover"
+                    src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    alt="Article"
+                />
+            </Box>
 
             <Box p={6}>
                 <Box>

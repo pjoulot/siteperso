@@ -3,6 +3,8 @@ module.exports = {
   images: {
     domains: [
       'www.drupal.org',
+      'hips.hearstapps.com',
+      'images.unsplash.com'
     ],
   },
 }

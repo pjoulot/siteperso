@@ -107,7 +107,7 @@ export default function Features2Columns() {
                   />
                 }
               >
-                I love coding, so be sure I'll enjoy to give my best to complete your projects. I also use my free time to code on personal projects or contribute on open source projects.
+                I love coding, so be sure I&apos;ll enjoy to give my best to complete your projects. I also use my free time to code on personal projects or contribute on open source projects.
               </Feature>
 
               <Feature
