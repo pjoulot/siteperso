@@ -11,6 +11,7 @@ import {
     Image,
     Heading,
 } from "@chakra-ui/react";
+import ImageNext from './ImageNext';
 import Heading1 from "./headings/Heading1";
 
 import { FiExternalLink } from "react-icons/fi";
@@ -20,7 +21,7 @@ const SplitWithImage = (data) => {
     return (
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
             <Flex bgGradient='linear(to-tr, rgb(253, 71, 93), rgb(14, 4, 75))' position="relative">
-                <Image
+                <ImageNext
                     src="https://www.drupal.org/files/cta/background/DrupalCon_NA_Bg_8-alt_7_1_2.png"
                     alt="Drupal background"
                     fit="cover"

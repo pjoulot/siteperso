@@ -102,7 +102,7 @@ export default function HomeHero() {
             <Box
               py={"1em"}
               px={"2em"}
-              bg={'brand.200'}
+              bg={useColorModeValue('brand.200', 'brand.600')}
               animation={swingAnimation}
               transformOrigin={'center -20px'}
               position={'relative'}
