@@ -4,7 +4,8 @@ module.exports = {
     domains: [
       'www.drupal.org',
       'hips.hearstapps.com',
-      'images.unsplash.com'
+      'images.unsplash.com',
+      'www.philippejoulot.fr'
     ],
   },
 }

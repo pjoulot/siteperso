@@ -136,7 +136,7 @@ export default function Header() {
         transition="box-shadow 0.2s"
         bg={bg}
         w="full"
-        py="4rem"
+        pt="4rem"
         overflowY="hidden"
       >
         <Container maxW={'7xl'} h={'4.5rem'}>
@@ -172,7 +172,7 @@ export default function Header() {
             </Flex>
             <Flex>
               <HStack spacing="5" display={{ base: "none", md: "flex" }}>
-                <MenuLink href="/">
+                <MenuLink href="/about-me">
                   About me
                 </MenuLink>
                 <MenuLink href="/">
