@@ -47,7 +47,7 @@ export default function HomeHero() {
             </Text>
           </Heading1>
           <Text color={'gray.500'}>
-            Developping software has been a hobbie since high school, now it is also my job. I am very lucky to be able to do what I love for a living, so if you&apos;re looking for a passionate developer, you are at the right place!
+            Developping software has been a hobbie since high school, now it is also my job. I am very lucky to be able to do what I love for a living, so if you&apos;re looking for a passionate developer, you are in the right place!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}

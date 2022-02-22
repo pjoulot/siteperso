@@ -175,10 +175,10 @@ export default function Header() {
                 <MenuLink href="/about-me">
                   About me
                 </MenuLink>
-                <MenuLink href="/">
-                  CV
+                <MenuLink href="/resume">
+                  Resume
                 </MenuLink>
-                <MenuLink href="/">
+                <MenuLink href="/projects">
                   Projects
                 </MenuLink>
                 <MenuLink href="/">

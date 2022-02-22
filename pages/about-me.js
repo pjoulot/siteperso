@@ -1,16 +1,13 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import * as React from 'react';
 import ImageNext from '../components/ImageNext';
 import { Link, Button, Icon, SimpleGrid, Container, Flex, useColorModeValue } from "@chakra-ui/react";
 import PageContainer from '../components/PageContainer'
-import HomeHero from '../components/HomeHero'
 import AboutHero from '../components/AboutHero'
 import SplitWithImage from '../components/SplitWithImage'
 import { FiExternalLink } from "react-icons/fi";
-import { SiDrupal } from 'react-icons/si';
 
-export default function Home() {
+export default function AboutMe() {
     const buttonGithub = <Link href="/">
         <Button
             mt={2}
