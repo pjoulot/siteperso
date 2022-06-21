@@ -56,7 +56,6 @@ const UserCard = () => {
           >
             <Icon
               as={BsFillBriefcaseFill}
-              as={BsFillBriefcaseFill}
               h={6}
               w={6}
               mr={2}

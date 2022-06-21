@@ -48,7 +48,7 @@ import {
               </Text>
             </Heading1>
             <Text color={'gray.500'}>
-                My name is Philippe Joulot, I'm born in Vélizy-Villacoublay in France and I currently live in Vancouver in Canada. I love to go in meetups in order to learn more about new technologies and meet other developers.
+                My name is Philippe Joulot, I&apos;m born in Vélizy-Villacoublay in France and I currently live in Vancouver in Canada. I love to go in meetups in order to learn more about new technologies and meet other developers.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}

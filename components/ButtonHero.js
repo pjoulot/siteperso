@@ -39,7 +39,7 @@ const ButtonHero = () => {
           fontSize={{ base: "lg", md: "xl" }}
           color={useColorModeValue("gray.600",'gray.300')}
         >
-          I consider myself very lucky to do something I love for a living, so if you're looking for a invested person to work on your projects, don't hesitate to contact me.
+          I consider myself very lucky to do something I love for a living, so if you&apos;re looking for a invested person to work on your projects, don&apos;t hesitate to contact me.
         </chakra.p>
         <Stack
         direction={{base:"column",sm:"row"}}
